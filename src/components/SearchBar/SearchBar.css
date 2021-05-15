@@ -1,0 +1,45 @@
+.searchBar {
+    border-radius: 10px;
+    background-color: var(--color-white);
+    box-shadow: 8px -4px 40px var(--color-grey);
+    margin: 0px 200px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px 10px;
+}
+
+.searchIcon {
+    padding: 10px;
+}
+
+.locateIcon {
+    padding: 10px;
+}
+
+.select {
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: var(--color-greyblue);
+    font-size: 20px;
+}
+
+.divider {
+    border-left: solid 1px var(--color-grey);
+}

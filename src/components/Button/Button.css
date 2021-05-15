@@ -1,0 +1,18 @@
+.donate {
+    width: 180px;
+    height: 50px;
+    outline: none;
+    background-color: var(--color-medorange);
+    color: var(--color-white);
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    margin: 20px;
+    border: none;
+}
+
+.donate:hover {
+    background-color: var(--color-orange);
+    outline: none;
+    cursor: pointer;
+}
