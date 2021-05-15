@@ -1,41 +1,44 @@
 .disclaimerBox {
   display: flex;
-  margin: 10em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  background-color: rgb(186, 221, 152);
-  padding: 50px;
+  background-color: var(--color-text);
+  margin: auto;
+  width: 60%;
 }
 .container {
   padding: 40px;
-  font-size: clamp(1em, 1.5em, 20px);
-  font-family: roboto, 'Times New Roman', seuge ui;
+  font-weight: 549;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .container > p {
   font-size: 1.5em;
-  font-weight: 540;
 }
 
 .disclaimer {
   text-align: start;
   font-size: 3.5em;
-  color: rgb(235, 67, 131);
+  color: var(--color-orange);
   font-family: 'Times New Roman', Times, serif;
 }
 
 .btn {
-  background: #1cc238;
+  background: var(--color-green);
   -webkit-border-radius: 30;
   -moz-border-radius: 30;
   border-radius: 10px;
-  border-color: #1cc238;
+  border-color: #1cc23800;
   font-family: 'Times New Roman', Times, serif New;
-  color: #131313;
+  color: var(--color-brown);
   font-size: 30px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   width: 35%;
   cursor: pointer;
+}
+
+.image__disclaimer {
+  height: 100vh;
+  width: 100vw;
 }

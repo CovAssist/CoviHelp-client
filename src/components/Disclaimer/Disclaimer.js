@@ -1,6 +1,9 @@
+import React from 'react';
 import './Disclaimer.css';
 
-const Disclaimer = () => {
+const img = '../../Assests/dis.svg';
+
+function Disclaimer() {
   return (
     <div className="disclaimerBox">
       <div className="container">
@@ -15,9 +18,9 @@ const Disclaimer = () => {
         </p>
         <button className="btn"> Accept </button>
       </div>
-      <img src="" alt="" />
+      <img className="image__disclaimer" src={img} alt="" />
     </div>
   );
-};
+}
 
 export default Disclaimer;

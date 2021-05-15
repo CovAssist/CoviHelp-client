@@ -1,3 +1,18 @@
+:root {
+  --color-blue: #1a1f59;
+  --color-lightBlue: #536d86;
+  --color-orange: #f78226;
+  --color-lightGreen: #8ee085;
+  --color-lightestblue: #93a4b5;
+  --color-grey: #6d6d6d;
+  --color-medBlue: #30475e;
+  --color-white: #fdfdfd;
+  --color-medorange: #f2a365;
+  --color-green: #24b913;
+  --color-greyblue: #cecdd4;
+  --color-brown: #424141;
+}
+
 .App {
   text-align: center;
 }
