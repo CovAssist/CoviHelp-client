@@ -7,7 +7,7 @@
 .container {
   padding: 40px;
   font-weight: 549;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: aliceblue;
   font-size: 1.2rem;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -36,9 +36,4 @@
   text-decoration: none;
   width: 35%;
   cursor: pointer;
-}
-
-.image__disclaimer {
-  height: 100vh;
-  width: 100vw;
 }

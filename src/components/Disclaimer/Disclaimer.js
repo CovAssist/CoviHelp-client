@@ -18,7 +18,11 @@ function Disclaimer() {
         </p>
         <button className="btn"> Accept </button>
       </div>
-      <img className="image__disclaimer" src={img} alt="" />
+      <img
+        className="image__disclaimer"
+        src="https://raw.githubusercontent.com/CovAssist/CoviHelp-client/3d2c3ff6aac248dee41133b9e870dabeb34b7a22/src/Assests/dis.svg?token=APAWVJ566PGW4KNBZ2H23BDAT7TKK"
+        alt=""
+      />
     </div>
   );
 }
