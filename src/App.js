@@ -1,9 +1,10 @@
 import './App.css';
-import Disclaimer from './components/LandingPage/Disclaimer/Disclaimer';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import Disclaimer from './components/Disclaimer/Disclaimer';
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Disclaimer />
     </div>
   );
