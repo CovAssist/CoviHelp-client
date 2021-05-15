@@ -16,3 +16,22 @@
     outline: none;
     cursor: pointer;
 }
+
+.register {
+
+    border-radius: 15px;
+    border: solid 6px var(--color-medBlue);
+    padding: 15px 70px;
+    background-color: transparent;
+    font-size: 28px;
+    color: var(--color-medBlue);
+
+}
+
+.register:hover {
+    background-color: var(--color-medBlue);
+    cursor: pointer;
+    color: var(--color-white);
+    transition: 0.5s;
+    outline: none;
+}
