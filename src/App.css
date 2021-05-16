@@ -14,10 +14,14 @@
   --color-green: #24b913;
   --color-greyblue: #cecdd4;
   --color-brown: #424141;
+  --color-notice: #647993;
+  --color-form: #f5f5f5;
+  --color-formContent: #617085;
 }
 
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
