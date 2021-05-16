@@ -1,7 +1,9 @@
 .mainHeader {
   background-image: url('../../Assests/landingBG.png');
+
   width: 100%;
   height: 70%;
+
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -15,6 +17,7 @@
 .covidresearch {
   width: 60%;
 }
+
 .covid {
   width: 45vw;
 }

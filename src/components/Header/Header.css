@@ -10,8 +10,6 @@
 
 }
 
-.navName:after {}
-
 .navName:hover {
     color: var(--color-medorange);
     border-bottom: solid 2px var(--color-medorange);
@@ -40,15 +38,23 @@
 
 .covi {
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 80px;
     color: var(--color-grey);
     justify-content: center;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .instruct {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: var(--color-grey);
+    text-align: center;
+    padding: 10px;
 }
 
-.google {}
+.googled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

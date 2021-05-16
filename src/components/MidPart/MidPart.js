@@ -1,5 +1,4 @@
 import React from 'react';
-import world from '../../Assests/undraw_connected_world_wuay.png';
 import illustrate from '../../Assests/clip-covid-19-test-result.png';
 import './MidPart.css';
 import Button from '../Button/Button';
