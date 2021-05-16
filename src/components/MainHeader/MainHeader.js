@@ -4,7 +4,7 @@ import covidresearch from '../../Assests/clip-research-of-vaccines-and-cures-cor
 import './MainHeader.css';
 import SearchBar from '../../components/SearchBar/SearchBar';
 
-function LandingPage() {
+function MainHeader() {
   return (
     <div className="mainHeader">
       <Header />
@@ -24,4 +24,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default MainHeader;
