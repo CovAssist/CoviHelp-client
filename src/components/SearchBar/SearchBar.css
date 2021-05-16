@@ -1,7 +1,7 @@
 .searchBar {
   border-radius: 10px;
   background-color: var(--color-white);
-  box-shadow: 8px -4px 40px var(--color-grey);
+  box-shadow: 10px -4px 15px var(--color-medBlue);
   display: flex;
   align-items: center;
   height: 90px;
@@ -29,10 +29,11 @@
   color: var(--color-medBlue);
 }
 
-.searchIcon > .MuiSvgIcon-root {
+.searchIcon>.MuiSvgIcon-root {
   font-size: 40px;
 }
-.locateIcon > .MuiSvgIcon-root {
+
+.locateIcon>.MuiSvgIcon-root {
   font-size: 40px;
 }
 
