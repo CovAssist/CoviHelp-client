@@ -4,16 +4,16 @@ import covidresearch from '../../Assests/clip-research-of-vaccines-and-cures-cor
 import './MainHeader.css';
 import SearchBar from '../../components/SearchBar/SearchBar';
 
-function LandingPage() {
+function MainHeader() {
   return (
     <div className="mainHeader">
       <Header />
       <div className="mid">
-        <div className="appName">
+        <div className="headerName">
           <div className="name">
             covi<span className="care">Care</span>
+            <div className="moto">stay at Home and stay Safe</div>
           </div>
-          <div className="moto">stay at Home and stay Safe</div>
         </div>
         <div className="covidresearch">
           <img src={covidresearch} className="covid" alt="covid Research" />
@@ -24,4 +24,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default MainHeader;

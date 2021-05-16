@@ -35,10 +35,10 @@ function Header() {
           covi<span className="care">Care</span>
         </div>
         <div className="instruct">
-          you need to register/ login first if you want to donate for the secuirty purpose
+          you need to register/ login first if you want to donate <br></br> for the secuirty purpose
         </div>
-        <div className="google">
-          <Button buttonName="donate" label="Google" />
+        <div className="googled">
+          <Button buttonName="google" label="Google" />
         </div>
       </Popup>
       {/* <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
