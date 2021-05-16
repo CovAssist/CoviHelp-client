@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Disclaimer from './components/Disclaimer/Disclaimer';
 
 import LandingPage from './pages/LandingPage/LandingPage';
+import { useState } from 'react';
 
 const App = () => {
   const [modal, setmodal] = useState(false);
