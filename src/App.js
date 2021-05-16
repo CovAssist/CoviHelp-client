@@ -5,6 +5,7 @@ import Disclaimer from './components/Disclaimer/Disclaimer';
 import LandingPage from './pages/LandingPage/LandingPage';
 import DonorRegistration from './pages/DonorRegistration/DonorRegistration';
 
+
 const App = () => {
   const [modal, setmodal] = useState(false);
   
@@ -12,6 +13,7 @@ const App = () => {
     setmodal((prev) => !prev);
   };
   return (
+
     <div className="app">
       <Router>
         <Switch>
@@ -27,6 +29,7 @@ const App = () => {
         </Switch>
       </Router>
     </div>
+   
   );
 };
 
