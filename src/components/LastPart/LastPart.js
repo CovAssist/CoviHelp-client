@@ -2,6 +2,7 @@ import React from 'react';
 import './LastPart.css';
 import SendIcon from '@material-ui/icons/Send';
 import symptom from '../../Assests/symptoms.png';
+import savelife from '../../Assests/saveLife.png';
 
 function LastPart() {
   return (
@@ -15,7 +16,7 @@ function LastPart() {
       <div className="one">
         <div className="symptoms">How to save your life ?</div>
         <div className="symp">
-          <img className="symimg" src={symptom} alt="symptomsImage" />
+          <img className="symimg" src={savelife} alt="symptomsImage" />
         </div>
       </div>
       <div className="one">

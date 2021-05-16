@@ -4,8 +4,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: center;
-    margin: 5%;
-    margin-bottom: 2%;
+    margin-top: 10%;
 
 }
 
@@ -14,7 +13,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 6%;
+}
 
+.symp {
+    margin: 20px 0px;
 }
 
 .one {
@@ -27,14 +30,14 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 5%;
+    margin: 2% 0% 5%;
 }
 
 .mailbox {
     border: solid 6px var(--color-lightestblue);
     background-color: var(--color-medBlue);
     border-radius: 10px;
-    margin: 4% 20%;
+    margin: 10% 20%;
     align-self: center;
     padding: 50px;
     padding-top: 60px;
@@ -56,6 +59,8 @@
 .send {
     color: var(--color-medorange);
     font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .footer {

@@ -1,5 +1,5 @@
 import './App.css';
-
+import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Disclaimer from './components/Disclaimer/Disclaimer';
 
@@ -16,7 +16,6 @@ const App = () => {
       <Router>
         <Switch>
           <Route path="/disclaimer">
-
             <Disclaimer modal={modal} setmodal={setmodal} />
             <button onClick={openModal}>showModal</button>
           </Route>
