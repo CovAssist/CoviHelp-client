@@ -1,0 +1,58 @@
+.vaccant__dash {
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccant__dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vaccant__title {
+  font-size: 40px;
+  margin: 60px;
+  font-weight: 550;
+  color: var(--color-blue);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.vaccant__box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.intotalVacn {
+  color: var(--color-blue);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.intotalVac {
+  color: var(--color-blue);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.vaccant__beds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vaccant__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+}
+.vaccant__ylw {
+  font-size: 25px;
+  text-align: start;
+  color: var(--color-orange);
+  font-weight: 600;
+}
+
+.vaccant__lists {
+  height: 100vh;
+}
