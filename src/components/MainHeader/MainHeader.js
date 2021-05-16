@@ -9,11 +9,11 @@ function LandingPage() {
     <div className="mainHeader">
       <Header />
       <div className="mid">
-        <div className="appName">
+        <div className="headerName">
           <div className="name">
             covi<span className="care">Care</span>
+            <div className="moto">stay at Home and stay Safe</div>
           </div>
-          <div className="moto">stay at Home and stay Safe</div>
         </div>
         <div className="covidresearch">
           <img src={covidresearch} className="covid" alt="covid Research" />
