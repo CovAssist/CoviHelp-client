@@ -2,29 +2,29 @@
     border-radius: 10px;
     background-color: var(--color-white);
     box-shadow: 8px -4px 40px var(--color-grey);
-    margin: 0px 200px 50px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 65px;
+    margin: 10%;
 }
 
 .category {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 0px 10px;
+    flex: 1;
 }
 
 .location {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     margin: 0px 10px;
+    flex: 1;
 }
 
 .searchIcon {
     padding: 10px;
+    color: var(--color-medBlue);
 }
 
 .locateIcon {
@@ -36,10 +36,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
     font-weight: bold;
-    color: var(--color-greyblue);
+    color: var(--color-medBlue);
     font-size: 20px;
-}
-
-.divider {
-    border-left: solid 1px var(--color-grey);
+    outline: none;
+    border: none;
 }

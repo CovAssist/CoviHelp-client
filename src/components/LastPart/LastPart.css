@@ -1,0 +1,63 @@
+.symptoms {
+    color: var(--color-medBlue);
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 5%;
+    margin-bottom: 2%;
+
+}
+
+.symimg {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.one {
+    margin: 40px;
+}
+
+.subsymp {
+    color: var(--color-medBlue);
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.mailbox {
+    border: solid 6px var(--color-lightestblue);
+    background-color: var(--color-medBlue);
+    border-radius: 10px;
+    margin: 4% 20%;
+    align-self: center;
+    padding: 50px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mailplace {
+    background-color: transparent;
+    border: none;
+    color: var(--color-lightBlue);
+    outline: none;
+    border-bottom: 4px solid var(--color-lightestblue);
+    border-radius: 1px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.send {
+    color: var(--color-medorange);
+    font-size: 3rem;
+}
+
+.footer {
+    background-color: var(--color-medBlue);
+}
