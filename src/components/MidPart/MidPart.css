@@ -1,76 +1,76 @@
 .midPart {
-  background-image: url('../../Assests/undraw_connected_world_wuay.png');
-  width: 100%;
-  background-repeat: no-repeat;
-  background-blend-mode: lighten;
+    background-image: url('../../Assests/undraw_connected_world_wuay.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
 }
 
 .state {
-  color: var(--color-medorange);
-  font-size: 38px;
-  font-style: italic;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 700;
-  text-align: center;
-  margin: 5%;
+    color: var(--color-medorange);
+    font-size: 38px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 5%;
 }
 
 .boxex {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .box {
-  border: solid 6px var(--color-greyblue);
-  border-radius: 10px;
-  padding: 52px 50px;
-  text-align: center;
-  background-color: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1));
+    border: solid 6px var(--color-greyblue);
+    border-radius: 10px;
+    padding: 52px 50px;
+    text-align: center;
+    background-color: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1));
 }
 
 .intotalCase {
-  color: red;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
 }
 
 .intotalCasen {
-  color: red;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 48px;
-  font-weight: bold;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
 }
 
 .intotalRecover {
-  color: var(--color-green);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
+    color: var(--color-green);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
 }
 
 .intotalRecovern {
-  color: var(--color-green);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 48px;
-  font-weight: bold;
+    color: var(--color-green);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
 }
 
 .regis {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .regisButton {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .illus {
-  flex: 0.6;
+    flex: 0.6;
 }
 
 .illust {
-  width: 60%;
-  margin: 15px 100px 0px 130px;
+    width: 60%;
+    margin: 15px 100px 0px 130px;
 }
