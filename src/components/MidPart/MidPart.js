@@ -7,7 +7,7 @@ import Button from '../Button/Button';
 function MidPart() {
   return (
     <div className="midPart">
-      {/* <img className="world" src={world} alt="world" /> */}
+      {/* <div className="bg2"></div> */}
       <div className="state">188+ countries get affected by Corona</div>
       <div className="boxex">
         {' '}
@@ -22,8 +22,8 @@ function MidPart() {
       </div>
       <div className="regis">
         <div className="regisButton">
-          <Button buttonName="register" label="Patient Registration" />
-          <Button buttonName="register" label="Patient Registration" />
+          <Button buttonName="registerp" label="Patient Registration" />
+          <Button buttonName="registerv" label="Volunteer Registration" />
         </div>
         <div className="illus">
           <img className="illust" src={illustrate} alt="illsut" />

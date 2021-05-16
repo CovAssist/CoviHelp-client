@@ -1,6 +1,6 @@
 .mainHeader {
     background-image: url('../../Assests/landingBG.png');
-    width: 100%;
+    width: fit-content;
     height: 730px;
     background-repeat: no-repeat;
 }

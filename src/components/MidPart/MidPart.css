@@ -1,13 +1,11 @@
-/* .midPart {
+.midPart {
     background-image: url("../../Assests/undraw_connected_world_wuay.png");
-    width: 100%;
+    width: fit-content;
     background-repeat: no-repeat;
-    margin-top: 730px;
-} */
-/* 
-.world {
-    opacity: 0.4;
-} */
+    background-blend-mode: lighten;
+
+}
+
 
 .state {
     color: var(--color-medorange);
@@ -16,6 +14,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     text-align: center;
+    margin: 5%;
 }
 
 .boxex {
@@ -30,6 +29,7 @@
     border-radius: 10px;
     padding: 52px 50px;
     text-align: center;
+    background-color: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1));
 }
 
 .intotalCase {
@@ -63,17 +63,19 @@
 
 .regis {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+
 }
 
 .regisButton {
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
 }
 
-/* .illus {
-    flex: 0.8;
-} */
+.illus {
+    flex: 0.6;
+}
 
 .illust {
     width: 60%;
