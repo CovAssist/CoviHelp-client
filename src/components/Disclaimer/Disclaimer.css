@@ -1,41 +1,50 @@
-.disclaimerBox {
+.modal {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  margin: 10em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  background-color: rgb(186, 221, 152);
-  padding: 50px;
-}
-.container {
-  padding: 40px;
-  font-size: clamp(1em, 1.5em, 20px);
-  font-family: roboto, 'Times New Roman', seuge ui;
+  position: fixed;
 }
 
-.container > p {
-  font-size: 1.5em;
-  font-weight: 540;
+.disclaimerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  border-radius: 30px;
+  background-color: rgb(245, 245, 245);
+  margin: auto;
+  padding: 40px;
 }
 
 .disclaimer {
-  text-align: start;
-  font-size: 3.5em;
-  color: rgb(235, 67, 131);
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: var(--color-orange);
 }
 
+.para {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+}
 .btn {
-  background: #1cc238;
-  -webkit-border-radius: 30;
-  -moz-border-radius: 30;
-  border-radius: 10px;
-  border-color: #1cc238;
-  font-family: 'Times New Roman', Times, serif New;
-  color: #131313;
-  font-size: 30px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  width: 35%;
+  width: 300px;
+  margin-top: 40px;
+  padding: 20px;
+  color: var(--color-brown);
+  border-radius: 24px;
+  font-size: 26px;
+  border-color: transparent;
+  background-color: var(--color-lightGreen);
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.image__disclaimer {
+  height: 55vh;
+  width: 50vw;
 }
