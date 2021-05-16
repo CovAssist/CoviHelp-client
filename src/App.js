@@ -1,8 +1,8 @@
 import './App.css';
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Disclaimer from './components/Disclaimer/Disclaimer';
-import { useState } from 'react';
-import { Router } from 'express';
+
 import LandingPage from './pages/LandingPage/LandingPage';
 
 const App = () => {
@@ -16,6 +16,7 @@ const App = () => {
       <Router>
         <Switch>
           <Route path="/disclaimer">
+
             <Disclaimer modal={modal} setmodal={setmodal} />
             <button onClick={openModal}>showModal</button>
           </Route>
