@@ -8,7 +8,7 @@ function LandingPage() {
   return (
     <div className="mainHeader">
       <Header />
-      <div className="midPart">
+      <div className="mid">
         <div className="appName">
           <div className="name">
             covi<span className="care">Care</span>

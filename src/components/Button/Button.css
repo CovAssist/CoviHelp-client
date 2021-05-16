@@ -16,3 +16,45 @@
     outline: none;
     cursor: pointer;
 }
+
+.registerp {
+
+    border-radius: 15px;
+    border: solid 6px var(--color-medBlue);
+    padding: 15px 70px;
+    background-color: transparent;
+    font-size: 28px;
+    color: var(--color-medBlue);
+    margin: 10px;
+
+}
+
+.registerv {
+
+    border-radius: 15px;
+    border: solid 6px var(--color-medBlue);
+    padding: 15px 70px;
+    background-color: transparent;
+    font-size: 25px;
+    color: var(--color-medBlue);
+    margin: 10px;
+}
+
+.registerv:hover {
+    background-color: var(--color-medBlue);
+    cursor: pointer;
+    color: var(--color-white);
+    transition: 0.5s ease;
+    outline: none;
+
+
+}
+
+.registerp:hover {
+    background-color: var(--color-medBlue);
+    cursor: pointer;
+    color: var(--color-white);
+    transition: 0.5s ease;
+    outline: none;
+
+}

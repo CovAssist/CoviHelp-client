@@ -1,11 +1,12 @@
 .mainHeader {
     background-image: url('../../Assests/landingBG.png');
-    background-size: cover cover;
+    width: fit-content;
+    height: 730px;
     background-repeat: no-repeat;
 }
 
 
-.midPart {
+.mid {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
