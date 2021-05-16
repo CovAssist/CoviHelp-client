@@ -24,7 +24,7 @@ function Disclaimer({ modal, setmodal }) {
             </div>
             <img
               className="image__disclaimer"
-              src="https://raw.githubusercontent.com/CovAssist/CoviHelp-client/5f68c20582f84ff988b7ad18ec0639445d441392/src/Assests/dis1.svg?token=APAWVJ7FYKLPLPPH7AH3MRLAUDODC"
+              src="https://raw.githubusercontent.com/manikmmalhotra/portfolio_site/5dbeb685a87e6f1708772f4d57c9fe7741c073e2/dis1.svg"
               alt=""
             />
           </div>
