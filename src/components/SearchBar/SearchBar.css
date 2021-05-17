@@ -29,11 +29,11 @@
   color: var(--color-medBlue);
 }
 
-.searchIcon>.MuiSvgIcon-root {
+.searchIcon > .MuiSvgIcon-root {
   font-size: 40px;
 }
 
-.locateIcon>.MuiSvgIcon-root {
+.locateIcon > .MuiSvgIcon-root {
   font-size: 40px;
 }
 
