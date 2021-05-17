@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.accordionSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    background-color: var(--color-white);
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+    background-color: transparent;
+}
+
+.wrap {
+    background: transparent;
+    border: solid 6px #30475e;
+    border-radius: 10px;
+    color: #30475e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headName {
+    padding: 1.3rem;
+    font-size: 1.8rem;
+}
+
+span {
+    margin-right: 1.5rem;
+}
