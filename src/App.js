@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Disclaimer from './components/Disclaimer/Disclaimer';
 import List from './components/List/List';
-
 import VaccantBed from './pages/VaccantBed/VaccantBed';
 import LandingPage from './pages/LandingPage/LandingPage';
 
