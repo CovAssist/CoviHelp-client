@@ -9,6 +9,7 @@ import DonorRegistration from './pages/DonorRegistration/DonorRegistration';
 import PatientRegistration from './pages/PatientRegistration/PatientRegistration';
 import Volunteer from './pages/VolunteerRegistration/Volunteer';
 import Contact from './pages/Contact/Contact';
+import Oxygen from './pages/Oxygen/Oxygen';
 
 const App = () => {
   const [modal, setmodal] = useState(false);
@@ -32,6 +33,9 @@ const App = () => {
           </Route>
           <Route path="/Volunteer">
             <Volunteer />
+          </Route>
+          <Route path="/Oxygen">
+            <Oxygen />
           </Route>
           <Route path="/Contact">
             <Contact />
