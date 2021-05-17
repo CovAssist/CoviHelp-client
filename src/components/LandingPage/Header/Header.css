@@ -1,0 +1,56 @@
+.background {
+  background: repeat url(https://image.freepik.com/free-vector/thank-you-doctors-nurses_23-2148497069.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  font-family: Raleway, sans-serif;
+  font-size: 2vw;
+  align-items: center;
+  letter-spacing: 0.03em;
+  padding-top: 20px;
+}
+
+  .heading {
+    margin: 0;
+    margin-left: 6px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  p {
+    cursor: pointer;
+
+  }
+
+  .home {
+    border: 1px solid var(--headline-color);
+    box-sizing: border-box;
+    padding: 10px 20px;
+  }
+    .home:hover {
+      background-color: var(--headline-color);
+      color: #faeee7;
+    }
+  
+  .hero {
+    padding: 4em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+  }
+
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .Header {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+    text-align: left;
+  }
+}
