@@ -43,6 +43,7 @@
 
 .select {
   padding: 10px;
+  width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
   font-weight: bold;
@@ -50,4 +51,8 @@
   font-size: 2.2vw;
   outline: none;
   border: none;
+  background-color: #fff;
+}
+.select-selected {
+  background-color: var(--color-medBlue);
 }
