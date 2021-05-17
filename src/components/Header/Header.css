@@ -7,7 +7,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     color: var(--color-white);
-
+    text-decoration: none;
 }
 
 .navName:hover {
@@ -16,7 +16,7 @@
     cursor: pointer;
     transform: scaleX(1);
     transition: transform 5ms ease-in-out;
-
+    text-decoration: none;
 }
 
 

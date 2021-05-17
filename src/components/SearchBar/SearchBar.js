@@ -7,7 +7,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 function SearchBar() {
   return (
     <div className="searchBar">
-      <div className="category">
+      <div className="type">
         <div className="searchIcon">
           <SearchIcon />
         </div>

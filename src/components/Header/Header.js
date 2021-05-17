@@ -3,6 +3,7 @@ import Button from '../Button/Button';
 import Popup from '../Popup/Popup';
 import { useState } from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -38,7 +39,10 @@ function Header() {
           you need to register/ login first if you want to donate <br></br> for the secuirty purpose
         </div>
         <div className="googled">
-          <Button buttonName="google" label="Google" />
+          <Link to="/DonorRegistration">
+            {' '}
+            <Button buttonName="google" label="Google" />
+          </Link>
         </div>
       </Popup>
       {/* <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
