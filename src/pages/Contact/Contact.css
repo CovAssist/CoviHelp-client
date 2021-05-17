@@ -1,0 +1,59 @@
+second {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    color: var(--color-medBlue);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.subHeading {
+    color: var(--color-orange);
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+.contactBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6% auto;
+}
+
+.onebox {
+    border: solid 8px var(--color-medorange);
+    border-radius: 10px;
+    padding: 52px 50px;
+    text-align: center;
+    width: 25%;
+}
+
+.callicon>.MuiSvgIcon-root {
+    color: var(--color-medorange);
+    font-size: 3rem;
+
+}
+
+.num {
+    color: var(--color-medorange);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6em;
+}
+
+.mailicon>.MuiSvgIcon-root {
+    color: var(--color-medorange);
+    font-size: 3rem;
+}
+
+.mailid {
+    color: var(--color-medorange);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+}
