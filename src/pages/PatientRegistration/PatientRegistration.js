@@ -22,10 +22,12 @@ function PatientRegistration() {
               duis.
             </div>
           </div>
-          <PatientForm />
-          <div className='footer'>.</div>
+          <div className="fill">
+            {' '}
+            <PatientForm />
+          </div>
+          <div className="footer">.</div>
         </div>
-
       </div>
     </div>
   );

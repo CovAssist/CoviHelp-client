@@ -1,7 +1,7 @@
 import React from 'react';
 import MainHeader from '../../components/MainHeader/MainHeader';
 import './Volunteer.css';
-import VolunteerForm from '../../components/VolunteerForm/VolunteerForm';
+import VolunteerForm from '../../components/Forms/VolunteerForm/VolunteerForm';
 
 function DonorRegistration() {
   return (

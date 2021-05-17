@@ -1,4 +1,5 @@
 import React from 'react';
+import List from '../../components/List/List';
 import MainHeader from '../../components/MainHeader/MainHeader';
 import './VaccantBed.css';
 
@@ -29,7 +30,15 @@ function VaccantBed() {
           <div className="vaccant__title">Vaccant Beds Available</div>
           <div className="vaccant__list">
             <div className="vaccant__ylw">verified in last 24 hours*</div>
-            <div className="vaccant__lists"></div>
+            <div className="vaccant__lists">
+              <List />
+            </div>
+          </div>
+          <div className="vaccant__list">
+            <div className="vaccant__ylw">verified in last 24 hours*</div>
+            <div className="vaccant__lists">
+              <List />
+            </div>
           </div>
         </div>
       </div>

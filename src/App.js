@@ -39,11 +39,11 @@ const App = () => {
           <Route path="/DonorRegistration">
             <DonorRegistration />
           </Route>
-          <Route path="/">
-            <LandingPage />
-          </Route>
           <Route path="/PatientRegistration">
             <PatientRegistration />
+          </Route>
+          <Route path="/">
+            <LandingPage />
           </Route>
         </Switch>
       </Router>

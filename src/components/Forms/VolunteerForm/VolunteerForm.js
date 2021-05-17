@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import '../Forms/PersonalInfo/DonorForm.css';
-import Button from '../Button/Button';
+import Button from '../../Button/Button';
 
 const DonorForm = () => {
   const [formData, setFormData] = useState({});
