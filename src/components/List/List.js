@@ -1,125 +1,53 @@
 import React, { useState } from 'react';
-import { ListItems } from './ListItems';
-import { IconContext } from 'react-icons';
-import { FiPlus, FiMinus } from 'react-icons/fi';
+
 import './List.css';
-import styled from 'styled-components';
 
-const AccordionSection = styled.div`
-  ${
-    '' /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 100vh;
-  background: #fff; */
-  }
-`;
 
-const Container = styled.div`
-  ${
-    '' /* position: absolute;
-  top: 30%;
-  box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3); */
-  }
-`;
-
-const Wrap = styled.div`
-  ${
-    '' /* background: #272727;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-  .headName {
-    padding: 2rem;
-    font-size: 2rem;
-  }
-  span {
-    margin-right: 1.5rem;
-  } */
-  }
-`;
-
-const Dropdown = styled.div`
-  background: #30475e;
-  color: #fdfdfd;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #30475e;
-  border-top: 1px solid #30475e;
-  border-radius: 10px;
-  p {
-    font-size: 1.3rem;
-  }
-`;
-
-const Accordion = () => {
-  const [clicked, setClicked] = useState(false);
-
-  const toggle = (index) => {
-    if (clicked === index) {
-      //if clicked question is already active, then close it
-      return setClicked(null);
-    }
-
-    setClicked(index);
-  };
-
+function SimpList() {
   return (
-    <IconContext.Provider value={{ color: '#30475e', size: '25px' }}>
-      <AccordionSection className="accordionSection">
-        <Container className="conatiner">
-          {ListItems.map((item, index) => {
-            return (
-              <>
-                <Wrap className="wrap" onClick={() => toggle(index)} key={index}>
-                  <div className="title">
-                    {' '}
-                    <div className="headTitle">Hospital Name</div>
-                    <div className="headName">{item.hospital}</div>
-                  </div>
-                  <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
-                </Wrap>
-                {clicked === index ? (
-                  <Dropdown classname="dropdown">
-                    <div className="sub">
-                      {' '}
-                      <div className="subTitle">Hospital Name</div>
-                      <p className="subname">{item.lastVerified}</p>
-                    </div>
-                    <div className="sub">
-                      {' '}
-                      <div className="subTitle">Hospital Name</div>
-                      <p className="subname">{item.address}</p>
-                    </div>
-                    <div className="sub">
-                      {' '}
-                      <div className="subTitle">Hospital Name</div>
-                      <p className="subname">{item.phone}</p>
-                    </div>
-                    <div className="sub">
-                      {' '}
-                      <div className="subTitle">Hospital Name</div>
-                      <p className="subname">{item.details}</p>
-                    </div>
-                  </Dropdown>
-                ) : null}
-              </>
-            );
-          })}
-        </Container>
-      </AccordionSection>
-    </IconContext.Provider>
+    <div className="simple__list">
+      <div className="simpplist">
+        <div className="simpplist__title">this is A Hospital</div>
+        <div className="simpplist__time">21 May 2021, Time</div>
+      </div>
+    </div>
   );
-};
+}
+
+function ClickedList() {
+  return (
+    <div className="clicked__list">
+      <div className="clicked__top">
+        <div className="clicked__elem">
+          <div className="clicked__heading">Hospital Name</div>
+          <div className="clicked__bold clicked__filing">This That Hospital</div>
+        </div>
+        <div className="clicked__elem">
+          <div className="clicked__heading">Last Time Verified</div>
+          <div className="clicked__filing">1 May 2021, 5:00PM</div>
+        </div>
+      </div>
+      <div className="clicked__bot">
+        <div className="clicked__elem">
+          <div className="clicked__heading">Address</div>
+          <div className="clicked__filing">Content here, content here</div>
+        </div>
+        <div className="clicked__elem">
+          <div className="clicked__heading">Phone no.</div>
+          <div className="clicked__filing">+91 0000000000</div>
+        </div>
+        <div className="clicked__elem">
+          <div className="clicked__heading">Details</div>
+          <div className="clicked__filing">Content here, content here</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function List() {
+  const [CLicked, setCLicked] = useState(true);
+  return <div className="list">{CLicked ? <ClickedList /> : <SimpList />}</div>;
+}
 
 export default Accordion;
