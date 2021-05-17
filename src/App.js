@@ -2,21 +2,18 @@ import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Disclaimer from './components/Disclaimer/Disclaimer';
-import { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Disclaimer from './components/Disclaimer/Disclaimer';
 import List from './components/List/List';
 import VaccantBed from './pages/VaccantBed/VaccantBed';
-
+import LandingPage from './pages/LandingPage/LandingPage';
+import DonorRegistration from './pages/DonorRegistration/DonorRegistration';
 
 const App = () => {
   const [modal, setmodal] = useState(false);
-  
+
   const openModal = () => {
     setmodal((prev) => !prev);
   };
   return (
-
     <div className="app">
       <Router>
         <Switch>
@@ -30,14 +27,15 @@ const App = () => {
           <Route path="/list">
             <List />
           </Route>
+          <Route path="/DonorRegistration">
+            <DonorRegistration />
+          </Route>
           <Route path="/">
             <LandingPage />
-            <DonorRegistration />
           </Route>
         </Switch>
       </Router>
     </div>
-   
   );
 };
 

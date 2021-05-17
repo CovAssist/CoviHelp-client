@@ -22,8 +22,8 @@ const DonorForm = () => {
       mobileNo: '',
       message: '',
       infectedDate: '',
-      bloodGroup:'',
-      city:'',
+      bloodGroup: '',
+      city: '',
       recoveryDate: '',
       diseases: '',
       accept: 'false',
@@ -83,11 +83,11 @@ const DonorForm = () => {
   return (
     <div className="Donor">
       <form onSubmit={handleSubmit}>
-        <p className="category">Personal Information</p>
-        <div className="container">
+        <p className="personal">Personal Information</p>
+        <div className="greyBox">
           <label className="formfield">Your Name</label>
           <input
-            className="input"
+            className="donorinput"
             type="text"
             name="name"
             onChange={updateInput}
@@ -98,7 +98,7 @@ const DonorForm = () => {
             <div className="common">
               <label className="formfield">Your Age</label>
               <input
-                className="input"
+                className="donorinput"
                 type="age"
                 name="age"
                 onChange={updateInput}
@@ -108,7 +108,7 @@ const DonorForm = () => {
 
             <div className="common">
               <label className="formfield">Your Gender</label>
-              <select className="input" placeholder="select">
+              <select className="donorinput" placeholder="select">
                 {genders.map((item) => (
                   <option key={item.value} value={item.value}>
                     {item.label}
@@ -120,7 +120,7 @@ const DonorForm = () => {
 
           <label className="formfield">Your Email</label>
           <input
-            className="input"
+            className="donorinput"
             type="email"
             name="email"
             onChange={updateInput}
@@ -128,7 +128,7 @@ const DonorForm = () => {
           />
           <label className="formfield">Your Mobile No.</label>
           <input
-            className="input"
+            className="donorinput"
             type="no"
             name="mobileNo"
             onChange={updateInput}
@@ -136,11 +136,11 @@ const DonorForm = () => {
           />
         </div>
 
-        <p className="category">Medical Information</p>
-        <div className="container">
+        <p className="personal">Medical Information</p>
+        <div className="greyBox">
           <label className="formfield">Date of testing positive for Covid-19</label>
           <input
-            className="input"
+            className="donorinput"
             type="date"
             name="date"
             onChange={updateInput}
@@ -150,7 +150,7 @@ const DonorForm = () => {
           <div className="ageBox">
             <div className="common">
               <label className="formfield">Your Blood group</label>
-              <select className="input">
+              <select className="donorinput">
                 {bloodGroup.map((item) => (
                   <option key={item.value} value={item.value}>
                     {item.label}
@@ -162,7 +162,7 @@ const DonorForm = () => {
             <div className="common">
               <label className="formfield">State/City</label>
               <input
-                className="input"
+                className="donorinput"
                 type="text"
                 name="city"
                 onChange={updateInput}
@@ -173,7 +173,7 @@ const DonorForm = () => {
 
           <label className="formfield">Date of recovery</label>
           <input
-            className="input"
+            className="donorinput"
             type="date"
             name="date"
             onChange={updateInput}
@@ -181,26 +181,28 @@ const DonorForm = () => {
           />
           <label className="formfield">Have you suffered from any of the diseases earlier?</label>
           <input
-            className="input"
+            className="donorinput"
             type="diseases"
             name="diseases"
             onChange={updateInput}
             value={formData.diseases || ''}
           />
         </div>
-        <div className="container">
+        <div className="greyBox">
           <label className="formfield">Message/Query</label>
           <textarea
-            className="input"
+            className="donorinput"
             type="text"
             name="message"
-               onChange={updateInput}
+            onChange={updateInput}
             value={formData.message || ''}
           ></textarea>
         </div>
-        <div className="container">
-          <p className='agreement'>
-            Fugiat ut exercitation nostrud id cillum aliqua. Aliqua adipisicing sit mollit culpa. Officia do consequat consectetur irure exercitation ullamco fugiat ut aute. Reprehenderit voluptate consequat sit fugiat mollit enim.
+        <div className="greyBox">
+          <p className="agreement">
+            Fugiat ut exercitation nostrud id cillum aliqua. Aliqua adipisicing sit mollit culpa.
+            Officia do consequat consectetur irure exercitation ullamco fugiat ut aute.
+            Reprehenderit voluptate consequat sit fugiat mollit enim.
           </p>
           <input
             type="checkbox"
@@ -210,12 +212,10 @@ const DonorForm = () => {
           />
           <label className="tnc">Accept</label>
         </div>
-        <div className='submit'>
-          <Button buttonName='donate' label='Submit' />
+        <div className="submit">
+          <Button buttonName="donate" label="Submit" />
         </div>
-        
       </form>
-      
     </div>
   );
 };
