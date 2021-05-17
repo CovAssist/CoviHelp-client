@@ -6,6 +6,7 @@ import List from './components/List/List';
 import VaccantBed from './pages/VaccantBed/VaccantBed';
 import LandingPage from './pages/LandingPage/LandingPage';
 import DonorRegistration from './pages/DonorRegistration/DonorRegistration';
+import PatientRegistration from './pages/PatientRegistration/PatientRegistration';
 import Volunteer from './pages/VolunteerRegistration/Volunteer';
 import Contact from './pages/Contact/Contact';
 
@@ -40,6 +41,9 @@ const App = () => {
           </Route>
           <Route path="/">
             <LandingPage />
+          </Route>
+          <Route path="/PatientRegistration">
+            <PatientRegistration />
           </Route>
         </Switch>
       </Router>
