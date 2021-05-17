@@ -22,9 +22,13 @@ function DonorRegistration() {
               duis.
             </div>
           </div>
-          <DonorForm />
+          <div className="fill">
+            {' '}
+            <DonorForm />
+          </div>
         </div>
       </div>
+      <div className="footer">.</div>
     </div>
   );
 }
