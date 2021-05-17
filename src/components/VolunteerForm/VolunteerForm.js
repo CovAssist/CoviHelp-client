@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../Forms/PersonalInfo/DonorForm.css';
 import Button from '../Button/Button';
 
 const DonorForm = () => {
