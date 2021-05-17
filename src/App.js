@@ -7,6 +7,7 @@ import VaccantBed from './pages/VaccantBed/VaccantBed';
 import LandingPage from './pages/LandingPage/LandingPage';
 import DonorRegistration from './pages/DonorRegistration/DonorRegistration';
 import PatientRegistration from './pages/PatientRegistration/PatientRegistration';
+import Volunteer from './pages/VolunteerRegistration/Volunteer';
 
 const App = () => {
   const [modal, setmodal] = useState(false);
@@ -27,6 +28,9 @@ const App = () => {
           </Route>
           <Route path="/list">
             <List />
+          </Route>
+          <Route path="/Volunteer">
+            <Volunteer />
           </Route>
           <Route path="/DonorRegistration">
             <DonorRegistration />
