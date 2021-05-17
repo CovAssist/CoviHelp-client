@@ -7,6 +7,7 @@ import VaccantBed from './pages/VaccantBed/VaccantBed';
 import LandingPage from './pages/LandingPage/LandingPage';
 import DonorRegistration from './pages/DonorRegistration/DonorRegistration';
 import Volunteer from './pages/VolunteerRegistration/Volunteer';
+import Contact from './pages/Contact/Contact';
 
 const App = () => {
   const [modal, setmodal] = useState(false);
@@ -30,6 +31,9 @@ const App = () => {
           </Route>
           <Route path="/Volunteer">
             <Volunteer />
+          </Route>
+          <Route path="/Contact">
+            <Contact />
           </Route>
           <Route path="/DonorRegistration">
             <DonorRegistration />
