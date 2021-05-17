@@ -50,4 +50,4 @@ function List() {
   return <div className="list">{CLicked ? <ClickedList /> : <SimpList />}</div>;
 }
 
-export default Accordion;
+export default List;
