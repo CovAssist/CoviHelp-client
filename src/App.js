@@ -2,11 +2,12 @@ import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Disclaimer from './components/Disclaimer/Disclaimer';
-import VaccantBed from './pages/VaccantBed/VaccantBed';
-import DonorRegistration from './pages/DonorRegistration/DonorRegistration';
-import MainHeader from './components/MainHeader/MainHeader';
-import LandingPage from './pages/LandingPage/LandingPage';
 import List from './components/List/List';
+import VaccantBed from './pages/VaccantBed/VaccantBed';
+import LandingPage from './pages/LandingPage/LandingPage';
+import DonorRegistration from './pages/DonorRegistration/DonorRegistration';
+import Volunteer from './pages/VolunteerRegistration/Volunteer';
+import Contact from './pages/Contact/Contact';
 
 const App = () => {
   const [modal, setmodal] = useState(false);
@@ -25,11 +26,17 @@ const App = () => {
           <Route path="/bed">
             <VaccantBed />
           </Route>
-          <Route path="/donor">
-            <DonorRegistration />
-          </Route>
           <Route path="/list">
             <List />
+          </Route>
+          <Route path="/Volunteer">
+            <Volunteer />
+          </Route>
+          <Route path="/Contact">
+            <Contact />
+          </Route>
+          <Route path="/DonorRegistration">
+            <DonorRegistration />
           </Route>
           <Route path="/">
             <LandingPage />

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+
 import './List.css';
+
 
 function SimpList() {
   return (
@@ -48,4 +50,4 @@ function List() {
   return <div className="list">{CLicked ? <ClickedList /> : <SimpList />}</div>;
 }
 
-export default List;
+export default Accordion;

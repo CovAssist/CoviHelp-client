@@ -10,7 +10,7 @@
   border: 0.5px dotted rgb(15, 15, 15);
 }
 
-.category {
+.type {
   display: flex;
   align-items: center;
   margin: 0px 10px;
