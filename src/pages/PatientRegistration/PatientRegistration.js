@@ -1,9 +1,9 @@
 import React from 'react';
 import MainHeader from '../../components/MainHeader/MainHeader';
-import DonorForm from '../../components/Forms/DonorForm/DonorForm';
-import './DonorRegistration.css';
+import PatientForm from '../../components/Forms/PatientForm/PatientForm';
+import '../DonorRegistration/DonorRegistration.css';
 
-function DonorRegistration() {
+function PatientRegistration() {
   return (
     <div className="landing">
       <div className="first">
@@ -12,7 +12,7 @@ function DonorRegistration() {
       </div>
       <div className="registration">
         <div>
-          <div className="register">Donor Registration</div>
+          <div className="register">Patient Registration</div>
           <div className="note">Please fill the registration form...</div>
           <div className="donorMessage">
             <div className="imp">
@@ -22,7 +22,7 @@ function DonorRegistration() {
               duis.
             </div>
           </div>
-          <DonorForm />
+          <PatientForm />
           <div className='footer'>.</div>
         </div>
 
@@ -31,4 +31,4 @@ function DonorRegistration() {
   );
 }
 
-export default DonorRegistration;
+export default PatientRegistration;

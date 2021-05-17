@@ -6,6 +6,7 @@ import List from './components/List/List';
 import VaccantBed from './pages/VaccantBed/VaccantBed';
 import LandingPage from './pages/LandingPage/LandingPage';
 import DonorRegistration from './pages/DonorRegistration/DonorRegistration';
+import PatientRegistration from './pages/PatientRegistration/PatientRegistration';
 
 const App = () => {
   const [modal, setmodal] = useState(false);
@@ -32,6 +33,9 @@ const App = () => {
           </Route>
           <Route path="/">
             <LandingPage />
+          </Route>
+          <Route path="/PatientRegistration">
+            <PatientRegistration />
           </Route>
         </Switch>
       </Router>
