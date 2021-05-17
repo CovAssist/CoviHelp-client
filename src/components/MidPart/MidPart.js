@@ -2,6 +2,7 @@ import React from 'react';
 import illustrate from '../../Assests/clip-covid-19-test-result.png';
 import './MidPart.css';
 import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 
 function MidPart() {
   return (
@@ -24,7 +25,10 @@ function MidPart() {
       </div>
       <div className="regis">
         <div className="regisButton">
-          <Button buttonName="registerp" label="Patient Registration" />
+          <Link to="/PatientRegistration">
+            {' '}
+            <Button buttonName="registerp" label="Patient Registration" />
+          </Link>
           <Button buttonName="registerv" label="Volunteer Registration" />
         </div>
         <div className="illus">

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Button from '../../Button/Button';
-import './DonorForm.css';
+import '../Form.css';
 
-const DonorForm = () => {
+const PatientForm = () => {
   const [formData, setFormData] = useState({});
 
   const updateInput = (e) => {
@@ -21,10 +21,9 @@ const DonorForm = () => {
       gender: '',
       mobileNo: '',
       message: '',
-      infectedDate: '',
+      hospital: '',
       bloodGroup: '',
       city: '',
-      recoveryDate: '',
       diseases: '',
       accept: 'false',
     });
@@ -85,7 +84,7 @@ const DonorForm = () => {
       <form onSubmit={handleSubmit}>
         <p className="personal">Personal Information</p>
         <div className="greyBox">
-          <label className="formfield">Your Name</label>
+          <label className="formfield">Patient Name</label>
           <input
             className="donorinput"
             type="text"
@@ -96,7 +95,7 @@ const DonorForm = () => {
 
           <div className="ageBox">
             <div className="common">
-              <label className="formfield">Your Age</label>
+              <label className="formfield">Patient Age</label>
               <input
                 className="donorinput"
                 type="age"
@@ -107,7 +106,7 @@ const DonorForm = () => {
             </div>
 
             <div className="common">
-              <label className="formfield">Your Gender</label>
+              <label className="formfield">Gender</label>
               <select className="donorinput" placeholder="select">
                 {genders.map((item) => (
                   <option key={item.value} value={item.value}>
@@ -118,7 +117,7 @@ const DonorForm = () => {
             </div>
           </div>
 
-          <label className="formfield">Your Email</label>
+          <label className="formfield">Your Email Id</label>
           <input
             className="donorinput"
             type="email"
@@ -138,13 +137,13 @@ const DonorForm = () => {
 
         <p className="personal">Medical Information</p>
         <div className="greyBox">
-          <label className="formfield">Date of testing positive for Covid-19</label>
+          <label className="formfield">Name of the Hospital where you're undergoing treatment</label>
           <input
             className="donorinput"
-            type="date"
-            name="date"
+            type="text"
+            name="hospital"
             onChange={updateInput}
-            value={formData.date || ''}
+            value={formData.hospital || ''}
           />
 
           <div className="ageBox">
@@ -171,15 +170,7 @@ const DonorForm = () => {
             </div>
           </div>
 
-          <label className="formfield">Date of recovery</label>
-          <input
-            className="donorinput"
-            type="date"
-            name="date"
-            onChange={updateInput}
-            value={formData.date || ''}
-          />
-          <label className="formfield">Have you suffered from any of the diseases earlier?</label>
+          <label className="formfield">SPO<sub>2</sub> level/Oxygen saturation level</label>
           <input
             className="donorinput"
             type="diseases"
@@ -188,30 +179,7 @@ const DonorForm = () => {
             value={formData.diseases || ''}
           />
         </div>
-        <div className="greyBox">
-          <label className="formfield">Message/Query</label>
-          <textarea
-            className="donorinput"
-            type="text"
-            name="message"
-            onChange={updateInput}
-            value={formData.message || ''}
-          ></textarea>
-        </div>
-        <div className="greyBox">
-          <p className="agreement">
-            Fugiat ut exercitation nostrud id cillum aliqua. Aliqua adipisicing sit mollit culpa.
-            Officia do consequat consectetur irure exercitation ullamco fugiat ut aute.
-            Reprehenderit voluptate consequat sit fugiat mollit enim.
-          </p>
-          <input
-            type="checkbox"
-            name="accept"
-            onChange={updateInput}
-            value={formData.accept || ''}
-          />
-          <label className="tnc">Accept</label>
-        </div>
+        
         <div className="submit">
           <Button buttonName="donate" label="Submit" />
         </div>
@@ -220,4 +188,4 @@ const DonorForm = () => {
   );
 };
 
-export default DonorForm;
+export default PatientForm;
