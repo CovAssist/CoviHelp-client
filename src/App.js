@@ -9,6 +9,7 @@ import DonorRegistration from './pages/DonorRegistration/DonorRegistration';
 import PatientRegistration from './pages/PatientRegistration/PatientRegistration';
 import Volunteer from './pages/VolunteerRegistration/Volunteer';
 import Contact from './pages/Contact/Contact';
+import Oxygen from './pages/Oxygen/Oxygen';
 
 const App = () => {
   const [modal, setmodal] = useState(false);
@@ -27,11 +28,11 @@ const App = () => {
           <Route path="/bed">
             <VaccantBed />
           </Route>
-          <Route path="/list">
-            <List />
-          </Route>
           <Route path="/Volunteer">
             <Volunteer />
+          </Route>
+          <Route path="/Oxygen">
+            <Oxygen />
           </Route>
           <Route path="/Contact">
             <Contact />
@@ -39,11 +40,11 @@ const App = () => {
           <Route path="/DonorRegistration">
             <DonorRegistration />
           </Route>
-          <Route path="/">
-            <LandingPage />
-          </Route>
           <Route path="/PatientRegistration">
             <PatientRegistration />
+          </Route>
+          <Route path="/">
+            <LandingPage />
           </Route>
         </Switch>
       </Router>

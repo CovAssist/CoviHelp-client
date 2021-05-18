@@ -10,6 +10,11 @@
     text-decoration: none;
 }
 
+.head {
+    overflow-x: hidden;
+
+}
+
 .navName:hover {
     color: var(--color-medorange);
     border-bottom: solid 2px var(--color-medorange);
@@ -19,6 +24,22 @@
     text-decoration: none;
 }
 
+a:link{
+    color: #fff ;
+    text-decoration: none;
+}
+a:visited{
+    color: var(--color-white) ;
+    text-decoration: none;
+}
+a:hover{
+    color: var(--color-medorange) ;
+    text-decoration: none;
+}
+a:active{
+    color: var(--color-medorange);
+    text-decoration: none;
+}
 
 .header {
     display: flex;

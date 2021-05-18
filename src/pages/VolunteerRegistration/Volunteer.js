@@ -1,7 +1,8 @@
 import React from 'react';
 import MainHeader from '../../components/MainHeader/MainHeader';
 import './Volunteer.css';
-import VolunteerForm from '../../components/VolunteerForm/VolunteerForm';
+import Footer from '../../components/Footer/Footer';
+import VolunteerForm from '../../components/Forms/VolunteerForm/VolunteerForm';
 
 function DonorRegistration() {
   return (
@@ -37,7 +38,9 @@ function DonorRegistration() {
           </div>
         </div>
       </div>
-      <div className="footer">.</div>
+      <div className="footer">
+        <Footer />
+      </div>{' '}
     </div>
   );
 }

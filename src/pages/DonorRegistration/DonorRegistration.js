@@ -2,6 +2,7 @@ import React from 'react';
 import MainHeader from '../../components/MainHeader/MainHeader';
 import DonorForm from '../../components/Forms/DonorForm/DonorForm';
 import './DonorRegistration.css';
+import Footer from '../../components/Footer/Footer';
 
 function DonorRegistration() {
   return (
@@ -27,9 +28,10 @@ function DonorRegistration() {
             <DonorForm />
           </div>
         </div>
-
       </div>
-      <div className="footer">.</div>
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }

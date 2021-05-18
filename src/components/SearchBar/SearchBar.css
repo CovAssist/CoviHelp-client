@@ -8,6 +8,9 @@
   margin: auto;
   width: 90%;
   border: 0.5px dotted rgb(15, 15, 15);
+
+  padding: 10px;
+
 }
 
 .type {
@@ -29,25 +32,105 @@
   color: var(--color-medBlue);
 }
 
-.searchIcon > .MuiSvgIcon-root {
+.searchIcon>.MuiSvgIcon-root {
   font-size: 40px;
 }
 
-.locateIcon > .MuiSvgIcon-root {
+.locateIcon>.MuiSvgIcon-root {
   font-size: 40px;
+  color: var(--color-medBlue);
+
 }
 
 .locateIcon {
   padding: 10px;
 }
 
-.select {
-  padding: 10px;
+.find {
+  /* padding: 10px; */
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 650;
+  color: var(--color-medBlue);
+  font-size: 1.8vw;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+
+}
+
+.loct {
+  /* padding: 10px; */
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 650;
+  color: var(--color-medBlue);
+  font-size: 1.8vw;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.select-selected {
+  background-color: var(--color-medorange);
+}
+
+.drop {
+  position: relative;
+}
+
+.dropbtn {
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--color-grey);
+  font-size: 2.2vw;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
   font-weight: bold;
   color: var(--color-medBlue);
-  font-size: 2.2vw;
+  font-size: 1.5vw;
   outline: none;
   border: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
+
+.dropdown-content a:hover {background-color: var(--color-lightBlue)}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+

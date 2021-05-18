@@ -54,11 +54,7 @@
   height: 4rem;
 }
 
-.send > .MuiSvgIcon-root {
+.send>.MuiSvgIcon-root {
   font-size: 45px;
   cursor: pointer;
-}
-
-.footer {
-  background-color: var(--color-medBlue);
 }
