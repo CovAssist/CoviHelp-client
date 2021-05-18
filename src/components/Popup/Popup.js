@@ -1,10 +1,20 @@
 import React from 'react';
+import { useState } from 'react';
 import './Popup.css';
 import CancelIcon from '@material-ui/icons/Cancel';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Button from '../Button/Button';
+import { auth, provider } from '../../firebase';
 
 function Popup(props) {
+  const [isLogin, setIsLogin] = useState(false);
+  const history = useHistory();
+  const signIn = () => {
+    auth
+      .signInWithPopup(provider)
+      .then(({ user }) => history.push('/DonorRegistration'))
+      .catch((error) => alert(error.message));
+  };
   return props.trigger ? (
     <div className="popup">
       <div className="popup-inner">
@@ -19,11 +29,8 @@ function Popup(props) {
             you need to register/ login first if you want to donate <br></br> for the secuirty
             purpose
           </div>
-          <div className="googled">
-            <Link to="/DonorRegistration">
-              {' '}
-              <Button buttonName="google" label="Google" />
-            </Link>
+          <div className="googled" onClick={signIn}>
+            <Button buttonName="google" label="Google" />
           </div>
         </div>
       </div>

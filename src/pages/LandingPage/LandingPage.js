@@ -2,6 +2,7 @@ import React from 'react';
 import MainHeader from '../../components/MainHeader/MainHeader';
 import LastPart from '../../components/LastPart/LastPart';
 import MidPart from '../../components/MidPart/MidPart';
+import Footer from '../../components/Footer/Footer';
 
 function LandingPage() {
   return (
@@ -18,6 +19,7 @@ function LandingPage() {
         {' '}
         <LastPart />
       </div>
+      <Footer />
     </div>
   );
 }

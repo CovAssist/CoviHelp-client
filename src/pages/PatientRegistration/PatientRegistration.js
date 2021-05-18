@@ -27,9 +27,7 @@ function PatientRegistration() {
             {' '}
             <PatientForm />
           </div>
-          <div className="footer">
-            <Footer />
-          </div>{' '}
+          <Footer />
         </div>
       </div>
     </div>

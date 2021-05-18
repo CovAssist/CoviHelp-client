@@ -38,9 +38,7 @@ function DonorRegistration() {
           </div>
         </div>
       </div>
-      <div className="footer">
-        <Footer />
-      </div>{' '}
+      <Footer />
     </div>
   );
 }

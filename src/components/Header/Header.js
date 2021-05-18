@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import Popup from '../Popup/Popup';
 import { useState } from 'react';
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { Link, history } from 'react-router-dom';
 
 function Header() {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -18,7 +18,6 @@ function Header() {
           <div className="navName">
             <Link to="/">Home</Link>
           </div>
-          <div className="navName">Verified resources</div>
           <div className="navName">
             <Link to="/Contact">Contact</Link>
           </div>
@@ -29,9 +28,6 @@ function Header() {
       </div>
 
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
-      {/* <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
-        <h1>covicare time</h1>
-      </Popup> */}
     </div>
   );
 }
