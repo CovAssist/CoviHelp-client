@@ -1,81 +1,53 @@
 .navLinks {
-    display: flex;
-    flex: 0.6;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    color: var(--color-white);
-    text-decoration: none;
+  display: flex;
+  flex: 0.6;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 .head {
-    overflow-x: hidden;
-
+  overflow-x: hidden;
 }
 
 .navName:hover {
-    color: var(--color-medorange);
-    border-bottom: solid 2px var(--color-medorange);
-    cursor: pointer;
-    transform: scaleX(1);
-    transition: transform 5ms ease-in-out;
-    text-decoration: none;
+  color: var(--color-medorange);
+  border-bottom: solid 2px var(--color-medorange);
+  cursor: pointer;
+  transform: scaleX(1);
+  transition: transform 5ms ease-in-out;
+  text-decoration: none;
 }
 
-a:link{
-    color: #fff ;
-    text-decoration: none;
+a:link {
+  color: #fff;
+  text-decoration: none;
 }
-a:visited{
-    color: var(--color-white) ;
-    text-decoration: none;
+a:visited {
+  color: var(--color-white);
+  text-decoration: none;
 }
-a:hover{
-    color: var(--color-medorange) ;
-    text-decoration: none;
+a:hover {
+  color: var(--color-medorange);
+  text-decoration: none;
 }
-a:active{
-    color: var(--color-medorange);
-    text-decoration: none;
+a:active {
+  color: var(--color-medorange);
+  text-decoration: none;
 }
 
 .header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .logo {
-    font-family: 'Roboto', sans-serif;
-    color: var(--color-white);
-    font-size: 28px;
-}
-
-.care {
-    color: var(--color-medorange);
-}
-
-.covi {
-    font-family: 'Roboto', sans-serif;
-    font-size: 80px;
-    color: var(--color-grey);
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.instruct {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: var(--color-grey);
-    text-align: center;
-    padding: 10px;
-}
-
-.googled {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-white);
+  font-size: 28px;
 }
