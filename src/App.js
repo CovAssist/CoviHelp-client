@@ -28,9 +28,6 @@ const App = () => {
           <Route path="/bed">
             <VaccantBed />
           </Route>
-          <Route path="/list">
-            <List />
-          </Route>
           <Route path="/Volunteer">
             <Volunteer />
           </Route>

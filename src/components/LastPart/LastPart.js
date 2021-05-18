@@ -3,6 +3,7 @@ import './LastPart.css';
 import SendIcon from '@material-ui/icons/Send';
 import symptom from '../../Assests/symptoms.png';
 import savelife from '../../Assests/saveLife.png';
+import Footer from '../Footer/Footer';
 
 function LastPart() {
   return (
@@ -32,7 +33,9 @@ function LastPart() {
           </div>
         </div>
       </div>
-      <div className="footer">.</div>
+      <div className="footerb">
+        <Footer />
+      </div>
     </div>
   );
 }

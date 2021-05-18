@@ -12,6 +12,7 @@ const SearchBar = () => {
         <div className="searchIcon">
           <SearchIcon />
         </div>
+
         <div class="dropdown">
           <button class="dropbtn">select category</button>
           <div class="dropdown-content">
@@ -24,7 +25,7 @@ const SearchBar = () => {
         <div className="locateIcon">
           <LocationOnIcon />
         </div>
-        <input className="select" type="text" placeholder="select location" />
+        <input className="loct" type="text" placeholder="your location" />
       </div>
       <Button buttonName="donate" label="search" />
     </div>

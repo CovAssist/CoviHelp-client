@@ -29,7 +29,10 @@ function MidPart() {
             {' '}
             <Button buttonName="registerp" label="Patient Registration" />
           </Link>
-          <Button buttonName="registerv" label="Volunteer Registration" />
+          <Link to="/Volunteer">
+            {' '}
+            <Button buttonName="registerv" label="Volunteer Registration" />
+          </Link>
         </div>
         <div className="illus">
           <img className="illust" src={illustrate} alt="illsut" />

@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/Footer/Footer';
 import List from '../../components/List/List';
 import MainHeader from '../../components/MainHeader/MainHeader';
 
@@ -20,6 +21,9 @@ function Oxygen() {
             <List />
           </div>
         </div>
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );
