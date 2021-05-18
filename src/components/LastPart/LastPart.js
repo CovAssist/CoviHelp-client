@@ -33,9 +33,6 @@ function LastPart() {
           </div>
         </div>
       </div>
-      <div className="footerb">
-        <Footer />
-      </div>
     </div>
   );
 }
