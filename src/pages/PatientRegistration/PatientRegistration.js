@@ -2,6 +2,7 @@ import React from 'react';
 import MainHeader from '../../components/MainHeader/MainHeader';
 import PatientForm from '../../components/Forms/PatientForm/PatientForm';
 import '../DonorRegistration/DonorRegistration.css';
+import Footer from '../../components/Footer/Footer';
 
 function PatientRegistration() {
   return (
@@ -26,7 +27,9 @@ function PatientRegistration() {
             {' '}
             <PatientForm />
           </div>
-          <div className="footer">.</div>
+          <div className="footer">
+            <Footer />
+          </div>{' '}
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import List from '../../components/List/List';
 import MainHeader from '../../components/MainHeader/MainHeader';
 import './VaccantBed.css';
+import Footer from '../../components/Footer/Footer';
 
 function VaccantBed() {
   return (
@@ -41,6 +42,9 @@ function VaccantBed() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );
