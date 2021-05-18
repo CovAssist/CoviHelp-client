@@ -7,13 +7,6 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   const [buttonPopup, setButtonPopup] = useState(false);
-  // const [timedPopup, setTimedPopup] = useState(false);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setTimedPopup(true);
-  //   }, 3000);
-  // }, []);
-
   return (
     <div className="head">
       <div className="header">
@@ -22,9 +15,9 @@ function Header() {
           covi<span className="care">Care</span>
         </div>
         <div className="navLinks">
-          <div className="navName">Home</div>
+          <div className="navName"><Link to="/">Home</Link></div>
           <div className="navName">Verified resources</div>
-          <div className="navName">Contact</div>
+          <div className="navName"><Link to="/Contact">Contact</Link></div>
         </div>
         <div className="Donate" onClick={() => setButtonPopup(true)}>
           <Button buttonName="donate" label="Donate" />
