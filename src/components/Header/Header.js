@@ -6,6 +6,7 @@ import './Header.css';
 import { Link, history } from 'react-router-dom';
 
 function Header() {
+  const [isLogin, setIsLogin] = useState(false);
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className="head">
@@ -22,12 +23,25 @@ function Header() {
             <Link to="/Contact">Contact</Link>
           </div>
         </div>
-        <div className="Donate" onClick={() => setButtonPopup(true)}>
-          <Button buttonName="donate" label="Donate" />
-        </div>
+        {!isLogin ? (
+          <div className="Donate" onClick={() => setButtonPopup(true)}>
+            <Button buttonName="donate" label="Donate" />
+          </div>
+        ) : (
+          <div className="Donate">
+            <Link to="/DonorRegistration">
+              <Button buttonName="donate" label="Donate" />
+            </Link>
+          </div>
+        )}
       </div>
 
-      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
+      <Popup
+        login={isLogin}
+        setLogin={setIsLogin}
+        trigger={buttonPopup}
+        setTrigger={setButtonPopup}
+      ></Popup>
     </div>
   );
 }
