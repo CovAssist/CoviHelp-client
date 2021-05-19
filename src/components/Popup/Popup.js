@@ -2,17 +2,20 @@ import React from 'react';
 import { useState } from 'react';
 import './Popup.css';
 import CancelIcon from '@material-ui/icons/Cancel';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import Button from '../Button/Button';
 import { auth, provider } from '../../firebase';
 
 function Popup(props) {
-  const [isLogin, setIsLogin] = useState(false);
   const history = useHistory();
   const signIn = () => {
     auth
       .signInWithPopup(provider)
-      .then(({ user }) => history.push('/DonorRegistration'))
+      .then(({ user }) => {
+        history.push('/DonorRegistration');
+        props.setLogin(true);
+        console.log(props.login);
+      })
       .catch((error) => alert(error.message));
   };
   return props.trigger ? (

@@ -13,9 +13,9 @@ const SearchBar = () => {
           <SearchIcon />
         </div>
 
-        <div class="dropdown">
-          <button class="dropbtn">select category</button>
-          <div class="dropdown-content">
+        <div className="dropdown">
+          <button className="dropbtn">select category</button>
+          <div className="dropdown-content">
             <Link to="/bed">Vacant Bed</Link>
             <Link to="/Oxygen">Oxygen Availability</Link>
           </div>
