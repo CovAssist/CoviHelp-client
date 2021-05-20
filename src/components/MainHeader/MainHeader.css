@@ -44,17 +44,12 @@
 
 @media screen and (max-width: 600px) {
   .mainHeader {
-
     height: auto;
     width: auto;
     padding-bottom: 40px;
   }
+
+  .covidresearch {
+    display: none;
+  }
 }
-
-
-.covidresearch {
-  display: none;
-}
-
-
-
