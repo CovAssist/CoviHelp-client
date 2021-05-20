@@ -32,14 +32,28 @@ function Contact() {
         </div>
         <div className="greyBoxm">
           <div className="form__head">Contact Us</div>
-          <label className="formfield">Your Name</label>
-          <input className="donorinput" type="text" name="name" />
-          <label className="formfield">Your Email</label>
-          <input className="donorinput" type="email" name="email" />
-          <label className="formfield">Your Message</label>
-          <input className="donorinputm" type="text" name="Message" />
-          <div className="submit">
-            <Button buttonName="donate" label="Submit" />
+          <div className="form__cont">
+            <div className="form__subBox">
+              {' '}
+              <label className="formfield">Your Name</label>
+              <input className="donorinput" type="text" name="name" />
+            </div>
+            <div className="form__subBox">
+              {' '}
+              <label className="formfield">Your Email</label>
+              <input className="donorinput" type="email" name="email" />
+            </div>
+            <div className="form__subBox">
+              <label className="formfield">Your Message</label>
+              <textarea
+                type="text"
+                className="donorinputm"
+                placeholder="Enter your message here..."
+              ></textarea>
+            </div>
+            <div className="form__subBoxm">
+              <Button buttonName="submit" label="Submit" />
+            </div>
           </div>
         </div>
       </div>

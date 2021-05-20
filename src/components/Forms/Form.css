@@ -1,19 +1,21 @@
 .donorinput {
+  display: block;
   width: 100%;
-  padding: 15px;
-  border: none;
-  height: 100%;
-  background-color: #fff;
-  resize: vertical;
-  outline: none;
-  color: var(--background-color);
-  margin-bottom: 20px;
-  margin-top: 10px;
+  height: 2rem;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.2rem;
+  /* border-style: none; */
+  margin-top: 0.4rem;
+  /* color: var(--color-medorange); */
+  outline: solid var(--color-orange);
 }
 
 .donorinput:hover {
   border: 3px solid var(--color-orange);
   transition: transform 5ms ease-in-out;
+}
+.Donor{
+  margin: 50px;
 }
 
 .Contact {
@@ -30,17 +32,31 @@
   margin-top: 40px;
 }
 
-.greyBox {
+
+.greyBoxm {
   max-width: 100%;
-  width: 50%;
-  margin: 20px auto;
-  position: relative;
+  width: 80%;
   background: var(--color-form);
   border-radius: 20px;
   box-shadow: 22px 3px 53px -17px rgba(115, 98, 98, 0.87);
   padding: 30px;
   backdrop-filter: blur(4px);
-  margin-bottom: 80px;
+  margin: 10% auto;
+}
+
+@media(min-width: 576px) {
+  .greyBoxm {
+    max-width: 540px;
+    max-height: auto;
+  }
+}
+
+@media(min-width: 768px) {
+  .greyBoxm {
+    max-width: 720px;
+    max-height: auto;
+
+  }
 }
 
 .formfield {
