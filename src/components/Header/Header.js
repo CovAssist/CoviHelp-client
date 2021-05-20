@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import Popup from '../Popup/Popup';
 import { useState } from 'react';
 import './Header.css';
-import { Link, history } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [isLogin, setIsLogin] = useState(false);

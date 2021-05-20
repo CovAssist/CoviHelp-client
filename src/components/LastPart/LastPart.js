@@ -1,9 +1,9 @@
+// eslint-disable-next-line
 import React from 'react';
 import './LastPart.css';
 import SendIcon from '@material-ui/icons/Send';
 import symptom from '../../Assests/symptoms.png';
 import savelife from '../../Assests/saveLife.png';
-import Footer from '../Footer/Footer';
 
 function LastPart() {
   return (
