@@ -84,104 +84,119 @@ const PatientForm = () => {
       <form onSubmit={handleSubmit}>
         <p className="personal">Personal Information</p>
         <div className="greyBox">
-          <label className="formfield">Patient Name</label>
-          <input
-            className="donorinput"
-            type="text"
-            name="name"
-            onChange={updateInput}
-            value={formData.name || ''}
-          />
+          <div className="form__subBox">
+            <label className="formfield">Patient Name</label>
+            <input
+              className="donorinput"
+              type="text"
+              name="name"
+              onChange={updateInput}
+              value={formData.name || ''}
+            />
+          </div>
+          <div className="form__subBox">
+            <div className="ageBox">
+              <div className="common">
+                <label className="formfield">Patient Age</label>
+                <input
+                  className="donorinput"
+                  type="age"
+                  name="age"
+                  onChange={updateInput}
+                  value={formData.age || ''}
+                />
+              </div>
 
-          <div className="ageBox">
-            <div className="common">
-              <label className="formfield">Patient Age</label>
-              <input
-                className="donorinput"
-                type="age"
-                name="age"
-                onChange={updateInput}
-                value={formData.age || ''}
-              />
-            </div>
-
-            <div className="common">
-              <label className="formfield">Gender</label>
-              <select className="donorinput" placeholder="select">
-                {genders.map((item) => (
-                  <option key={item.value} value={item.value}>
-                    {item.label}
-                  </option>
-                ))}
-              </select>
+              <div className="common">
+                <label className="formfield">Gender</label>
+                <select className="donorinput" placeholder="select">
+                  {genders.map((item) => (
+                    <option key={item.value} value={item.value}>
+                      {item.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
           </div>
-
-          <label className="formfield">Your Email Id</label>
-          <input
-            className="donorinput"
-            type="email"
-            name="email"
-            onChange={updateInput}
-            value={formData.email || ''}
-          />
-          <label className="formfield">Your Mobile No.</label>
-          <input
-            className="donorinput"
-            type="no"
-            name="mobileNo"
-            onChange={updateInput}
-            value={formData.mobileNo || ''}
-          />
+          <div className="form__subBox">
+            <label className="formfield">Your Email Id</label>
+            <input
+              className="donorinput"
+              type="email"
+              name="email"
+              onChange={updateInput}
+              value={formData.email || ''}
+            />
+          </div>
+          <div className="form__subBox">
+            <label className="formfield">Your Mobile No.</label>
+            <input
+              className="donorinput"
+              type="no"
+              name="mobileNo"
+              onChange={updateInput}
+              value={formData.mobileNo || ''}
+            />
+          </div>
         </div>
 
         <p className="personal">Medical Information</p>
         <div className="greyBox">
-          <label className="formfield">Name of the Hospital where you're undergoing treatment</label>
-          <input
-            className="donorinput"
-            type="text"
-            name="hospital"
-            onChange={updateInput}
-            value={formData.hospital || ''}
-          />
+          <div className="form__subBox">
+            {' '}
+            <label className="formfield">
+              Name of the Hospital where you're undergoing treatment
+            </label>
+            <input
+              className="donorinput"
+              type="text"
+              name="hospital"
+              onChange={updateInput}
+              value={formData.hospital || ''}
+            />
+          </div>
+          <div className="form__subBox">
+            <div className="ageBox">
+              <div className="common">
+                <label className="formfield">Your Blood group</label>
+                <select className="donorinput">
+                  {bloodGroup.map((item) => (
+                    <option key={item.value} value={item.value}>
+                      {item.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
 
-          <div className="ageBox">
-            <div className="common">
-              <label className="formfield">Your Blood group</label>
-              <select className="donorinput">
-                {bloodGroup.map((item) => (
-                  <option key={item.value} value={item.value}>
-                    {item.label}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div className="common">
-              <label className="formfield">State/City</label>
-              <input
-                className="donorinput"
-                type="text"
-                name="city"
-                onChange={updateInput}
-                value={formData.city || ''}
-              />
+              <div className="common">
+                <label className="formfield">State/City</label>
+                <input
+                  className="donorinput"
+                  type="text"
+                  name="city"
+                  onChange={updateInput}
+                  value={formData.city || ''}
+                />
+              </div>
             </div>
           </div>
-
-          <label className="formfield">SPO<sub>2</sub> level/Oxygen saturation level</label>
-          <input
-            className="donorinput"
-            type="diseases"
-            name="diseases"
-            onChange={updateInput}
-            value={formData.diseases || ''}
-          />
+          <div className="form__subBox">
+            <label className="formfield">
+              SPO<sub>2</sub> level/Oxygen saturation level
+            </label>
+            <input
+              className="donorinput"
+              type="diseases"
+              name="diseases"
+              onChange={updateInput}
+              value={formData.diseases || ''}
+            />
+          </div>
         </div>
-        
-        <div className="submit">
-          <Button buttonName="donate" label="Submit" />
+
+        <div className="form__subBox">
+          <Button buttonName="submit" label="Submit" />
         </div>
       </form>
     </div>
