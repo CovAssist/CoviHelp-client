@@ -86,10 +86,24 @@
   flex: 1;
 }
 @media screen and (max-width: 900px) {
-  .boxex {
-    display: block;
-  }
+
   .illust {
     display: none;
   }
+
+    .boxex{
+        display: block;
+    }
+    .intotalCasen{
+        font-size: 2rem;
+    }
+    .intotalCase{
+        font-size: 0.9rem;
+    }
+    .intotalRecovern{
+        font-size: 2rem;
+    }
+    .intotalRecover{
+        font-size: 0.9rem;
+    }
 }
