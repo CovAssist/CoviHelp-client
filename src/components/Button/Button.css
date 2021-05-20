@@ -17,6 +17,25 @@
   cursor: pointer;
 }
 
+.search {
+  width: 220px;
+  height: 50px;
+  outline: none;
+  background-color: var(--color-medorange);
+  color: var(--color-white);
+  font-size: 27px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  margin: auto;
+  border: none;
+}
+
+.search:hover {
+  background-color: var(--color-orange);
+  outline: none;
+  cursor: pointer;
+}
+
 .registerp {
   border-radius: 15px;
   border: solid 6px var(--color-medBlue);
@@ -70,4 +89,25 @@
   background-color: var(--color-orange);
   outline: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .donate {
+    width: 140px;
+    height: 40px;
+    outline: none;
+    background-color: var(--color-medorange);
+    color: var(--color-white);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+  }
+
+  .donate:hover {
+    background-color: var(--color-orange);
+    outline: none;
+    cursor: pointer;
+  }
 }
