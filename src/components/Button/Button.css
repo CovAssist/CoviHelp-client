@@ -31,11 +31,11 @@
   cursor: pointer;
 }
 
-
 .submit:hover {
   background-color: var(--color-orange);
   outline: none;
-  cursor: pointer;}
+  cursor: pointer;
+}
 
 .search {
   width: 220px;
@@ -129,9 +129,5 @@
     background-color: var(--color-orange);
     outline: none;
     cursor: pointer;
-  }
-
-  .submit{
-    width: 100px;
   }
 }
