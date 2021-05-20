@@ -25,7 +25,7 @@ const SearchBar = () => {
         <div className="locateIcon">
           <LocationOnIcon />
         </div>
-        <input className="loct" type="text" placeholder="your location" />
+        <input className="loct" type="text" placeholder="Your Location" />
       </div>
       <Button buttonName="search" label="search" />
     </div>
