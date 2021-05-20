@@ -46,6 +46,7 @@ a:active {
   font-family: 'Roboto', sans-serif;
   color: var(--color-white);
   font-size: 30px;
+  margin-left: 15px;
 }
 
 @media screen and (max-width: 600px) {
