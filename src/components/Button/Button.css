@@ -6,12 +6,31 @@
   color: var(--color-white);
   font-size: 22px;
   font-family: 'Montserrat', sans-serif;
-  border-radius: 20px;
+  border-radius: 16px;
   margin: 20px;
   border: none;
 }
 
+.submit {
+  width: 180px;
+  height: 50px;
+  outline: none;
+  background-color: var(--color-medorange);
+  color: var(--color-white);
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 16px;
+  border: none;
+  padding: 10px;
+}
+
 .donate:hover {
+  background-color: var(--color-orange);
+  outline: none;
+  cursor: pointer;
+}
+
+.submit:hover {
   background-color: var(--color-orange);
   outline: none;
   cursor: pointer;
