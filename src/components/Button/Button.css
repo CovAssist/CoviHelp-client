@@ -130,4 +130,8 @@
     outline: none;
     cursor: pointer;
   }
+
+  .submit{
+    width: 100px;
+  }
 }
