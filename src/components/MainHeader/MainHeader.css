@@ -41,12 +41,12 @@
   font-size: 25px;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .mainHeader {
     height: 50vh;
-    width: 100vw;
+    width: auto;
   }
   .covidresearch {
     display: none;
   }
-} */
+}
