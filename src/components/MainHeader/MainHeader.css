@@ -49,8 +49,12 @@
     width: auto;
     padding-bottom: 40px;
   }
-
-  .covidresearch {
-    display: none;
-  }
 }
+
+
+.covidresearch {
+  display: none;
+}
+
+}
+
