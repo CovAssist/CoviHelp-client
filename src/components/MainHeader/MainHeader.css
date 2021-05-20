@@ -1,7 +1,7 @@
 .mainHeader {
   background-image: url('../../Assests/landingBG.png');
 
-  width: 100%;
+  width: auto;
   height: 100vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -40,3 +40,13 @@
   color: var(--color-greyblue);
   font-size: 25px;
 }
+
+/* @media screen and (max-width: 600px) {
+  .mainHeader {
+    height: 50vh;
+    width: 100vw;
+  }
+  .covidresearch {
+    display: none;
+  }
+} */
