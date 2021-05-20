@@ -1,6 +1,6 @@
 .symptoms {
   color: var(--color-medBlue);
-  font-size: 48px;
+  font-size: 3rem;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   text-align: center;
@@ -16,7 +16,7 @@
 
 .subsymp {
   color: var(--color-medBlue);
-  font-size: 22px;
+  font-size: 1.6rem;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   text-align: center;
@@ -57,4 +57,12 @@
 .send>.MuiSvgIcon-root {
   font-size: 45px;
   cursor: pointer;
+}
+@media screen and (max-width:900px) {
+    .symptoms{
+        font-size: 1.5rem;
+    }
+    .subsymp{
+      font-size: 0.9rem;
+    }
 }
