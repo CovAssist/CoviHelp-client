@@ -58,6 +58,18 @@
   font-size: 45px;
   cursor: pointer;
 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 3rem;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 3rem;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 3rem;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 3rem;
+}
 @media screen and (max-width:900px) {
     .symptoms{
         font-size: 1.5rem;
@@ -65,4 +77,21 @@
     .subsymp{
       font-size: 0.9rem;
     }
+}
+@media screen and (max-width:600px) {
+  .mailbox{
+    padding: 0px;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 1.2rem;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 1.2rem;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 1.2rem;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 1.2rem;
+  }
 }

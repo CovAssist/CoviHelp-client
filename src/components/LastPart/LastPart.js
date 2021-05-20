@@ -26,7 +26,7 @@ function LastPart() {
         <div className="mailbox">
           <div className="mail">
             {' '}
-            <input className="mailplace" type="text" placeholder="Enter Your Email" />
+            <input className="mailplace" type="text" placeholder="Enter Email" />
           </div>
           <div className="send">
             <SendIcon />
