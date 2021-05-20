@@ -70,6 +70,9 @@
 :-moz-placeholder { /* Firefox 18- */
   font-size: 3rem;
 }
+.send>.MuiSvgIcon-root{
+  font-size: 4rem;
+}
 @media screen and (max-width:900px) {
     .symptoms{
         font-size: 1.5rem;
@@ -81,6 +84,13 @@
 @media screen and (max-width:600px) {
   .mailbox{
     padding: 0px;
+  }
+  .symimg{
+    width: 100%;
+    margin: 0px;
+  }
+  .send>.MuiSvgIcon-root{
+    font-size: 2rem;
   }
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-size: 1.2rem;
