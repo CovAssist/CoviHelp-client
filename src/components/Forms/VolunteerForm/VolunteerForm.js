@@ -104,7 +104,7 @@ const DonorForm = () => {
           ></textarea>
         </div>
 
-        <div className="submit">
+        <div>
           <Button buttonName="donate" label="Submit" />
         </div>
       </form>
