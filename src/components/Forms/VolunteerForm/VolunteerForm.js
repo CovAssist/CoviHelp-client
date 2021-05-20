@@ -116,8 +116,11 @@ const DonorForm = () => {
           </div>
         </div>
 
+
         <div className="form__subBox">
-          <Button buttonName="donate" label="Submit" />
+<Button buttonName="donate" label="Submit" />
+        
+          
         </div>
       </form>
     </div>

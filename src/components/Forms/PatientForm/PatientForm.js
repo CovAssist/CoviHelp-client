@@ -195,9 +195,14 @@ const PatientForm = () => {
           </div>
         </div>
 
+
         <div className="form__subBox">
           <Button buttonName="submit" label="Submit" />
+
+        
         </div>
+          
+       
       </form>
     </div>
   );

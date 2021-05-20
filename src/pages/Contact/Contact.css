@@ -143,12 +143,42 @@
   display: block;
   margin-top: 0.4rem;
   color: var(--color-medorange);
-  font-size: 1.4rem;
 }
 
+
+.formfield {
+  font-size: 1.12rem;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 2rem;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 2rem;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 2rem;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 2rem;
+}
 
 
 .donorinputm:hover {
   border: 3px solid var(--color-orange);
   transition: transform 5ms ease-in-out;
+}
+@media screen and (max-width:600px) {
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 1.2rem;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 1.2rem;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 1.2rem;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 1.2rem;
+  }
 }

@@ -228,9 +228,12 @@ const DonorForm = () => {
             <label className="tnc">Accept</label>
           </div>
         </div>
+
         <div className="form__subBox">
-          <Button buttonName="donate" label="Submit" />
-        </div>
+<Button buttonName="donate" label="Submit" />
+        </div >
+
+          
       </form>
     </div>
   );
