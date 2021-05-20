@@ -1,8 +1,7 @@
 import React from 'react';
-import { useState } from 'react';
 import './Popup.css';
 import CancelIcon from '@material-ui/icons/Cancel';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Button from '../Button/Button';
 import { auth, provider } from '../../firebase';
 
