@@ -3,6 +3,7 @@ import MainHeader from '../../components/MainHeader/MainHeader';
 import LastPart from '../../components/LastPart/LastPart';
 import MidPart from '../../components/MidPart/MidPart';
 import Footer from '../../components/Footer/Footer';
+import './LandingPage.css';
 
 function LandingPage() {
   return (
