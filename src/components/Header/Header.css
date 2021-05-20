@@ -10,10 +10,6 @@
   text-decoration: none;
 }
 
-.head {
-  overflow-x: hidden;
-}
-
 .navName:hover {
   color: var(--color-medorange);
   border-bottom: solid 2px var(--color-medorange);
@@ -49,5 +45,5 @@ a:active {
 .logo {
   font-family: 'Roboto', sans-serif;
   color: var(--color-white);
-  font-size: 28px;
+  font-size: 36px;
 }
