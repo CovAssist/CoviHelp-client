@@ -127,28 +127,7 @@
   }
 }
 
-.form__cont {
-  padding: 2.3rem 1rem;
-  border-radius: 0.3rem;
-}
 
-.form__subBox {
-  margin: 0 2.5rem 1.2rem 2rem;
-}
-
-.donorinput {
-  display: block;
-  width: 100%;
-  height: 2rem;
-  padding: 0.3rem 0.4rem;
-  border-radius: 0.2rem;
-  outline: 0;
-  border-style: none;
-  margin-top: 0.4rem;
-  color: var(--color-medorange);
-  font-size: 1.4rem;
-
-}
 
 .form__subBoxm {
   text-align: center;
@@ -166,6 +145,7 @@
   color: var(--color-medorange);
 }
 
+
 .formfield {
   font-size: 1.12rem;
 }
@@ -182,6 +162,7 @@
 :-moz-placeholder { /* Firefox 18- */
   font-size: 2rem;
 }
+
 
 .donorinputm:hover {
   border: 3px solid var(--color-orange);

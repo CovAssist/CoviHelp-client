@@ -6,8 +6,11 @@
   border-radius: 0.2rem;
   /* border-style: none; */
   margin-top: 0.4rem;
-  /* color: var(--color-medorange); */
-  outline: solid var(--color-orange);
+
+  color: var(--color-medorange);
+  font-size: 1.4rem;
+
+  
 }
 
 .donorinput:hover {
@@ -32,6 +35,32 @@
   margin-top: 40px;
 }
 
+
+.greyBox {
+  max-width: 100%;
+  width: 80%;
+  background: var(--color-form);
+  border-radius: 20px;
+  box-shadow: 22px 3px 53px -17px rgba(115, 98, 98, 0.87);
+  padding: 30px;
+  backdrop-filter: blur(4px);
+  margin: 2% auto 6%;
+}
+
+@media(min-width: 576px) {
+  .greyBox {
+    max-width: 540px;
+    max-height: auto;
+  }
+}
+
+@media(min-width: 768px) {
+  .greyBox {
+    max-width: 720px;
+    max-height: auto;
+
+  }
+}
 
 .greyBoxm {
   max-width: 100%;
@@ -62,6 +91,7 @@
 .formfield {
   color: var(--color-formContent);
   font-weight: bold;
+  font-size: 1.12rem;
 }
 
 .ageBox {
@@ -69,6 +99,11 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.form__subBox {
+  margin: 0 2.5rem 1.2rem 2rem;
+}
+
 
 .common {
   display: block;
@@ -86,7 +121,7 @@
   font-weight: 500;
 }
 
-.submit {
+/* .submit {
   display: flex;
   justify-content: center;
-}
+} */
