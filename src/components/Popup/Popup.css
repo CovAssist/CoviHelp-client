@@ -1,0 +1,62 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-lightBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup__mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-inner {
+  padding: 32px;
+  width: 65%;
+  height: 60%;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.close-btn > .MuiSvgIcon-root {
+  color: var(--color-medorange);
+  cursor: pointer;
+  font-size: 2.7rem;
+}
+
+.care {
+  color: var(--color-medorange);
+}
+
+.covi {
+  font-family: 'Roboto', sans-serif;
+  font-size: 6vw;
+  color: var(--color-grey);
+  justify-content: center;
+  text-align: center;
+}
+
+.instruct {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: var(--color-grey);
+  text-align: center;
+  margin: 10px;
+}
+
+.googled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

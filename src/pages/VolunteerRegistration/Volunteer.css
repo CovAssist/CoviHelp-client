@@ -1,0 +1,61 @@
+.registration {
+    display: flex;
+    justify-content: center;
+}
+
+.register {
+    color: var(--color-medBlue);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.note {
+    color: var(--color-orange);
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 10px;
+
+}
+
+.donorMessage {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+}
+
+.imp {
+    border: 10px solid var(--color-medorange);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+
+}
+
+.quest {
+    font-weight: bold;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    font-size: 1.7em;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.points {
+    font-size: 1em;
+    text-align: justify;
+    color: var(--color-notice);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+
+}
+
+.fill {
+    margin: 8% auto;
+}

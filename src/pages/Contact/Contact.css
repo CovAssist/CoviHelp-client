@@ -1,0 +1,101 @@
+.second {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.heading {
+  color: var(--color-medBlue);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 8%;
+}
+
+.subHeading {
+  color: var(--color-orange);
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+
+.contactBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.onebox {
+  border: solid 8px var(--color-medorange);
+  border-radius: 10px;
+  padding: 52px 50px;
+  text-align: center;
+  width: 40%;
+}
+
+.callicon > .MuiSvgIcon-root {
+  color: var(--color-medorange);
+  font-size: 3rem;
+}
+
+.num {
+  color: var(--color-medorange);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+.mailicon > .MuiSvgIcon-root {
+  color: var(--color-medorange);
+  font-size: 3rem;
+}
+
+.mailid {
+  color: var(--color-medorange);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.donorinputm {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  height: 40vh;
+  background-color: #fff;
+  resize: vertical;
+  outline: none;
+  color: var(--background-color);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.donorinputm:hover {
+  border: 3px solid var(--color-orange);
+  transition: transform 5ms ease-in-out;
+}
+
+.form__head {
+  color: var(--color-orange);
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+
+.greyBoxm {
+  max-width: 100%;
+  width: 50%;
+  margin: 20px auto;
+  position: relative;
+  background: var(--color-form);
+  border-radius: 20px;
+  box-shadow: 22px 3px 53px -17px rgba(115, 98, 98, 0.87);
+  padding: 30px;
+  backdrop-filter: blur(4px);
+  margin-bottom: 80px;
+  margin-top: 20vh;
+}

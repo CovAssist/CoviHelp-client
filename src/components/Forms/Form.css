@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+
+  text-rendering: optimizeLegibility;
+}
+
+.donorinput {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  height: 100%;
+  background-color: #fff;
+  resize: vertical;
+  outline: none;
+  color: var(--background-color);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.donorinput:hover {
+  border: 3px solid var(--color-orange);
+  transition: transform 5ms ease-in-out;
+}
+
+.Contact {
+  width: 100%;
+  padding: 40px 0;
+
+}
+
+.personal {
+  margin: 0px 25%;
+  position: relative;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #3e516a;
+  margin-top: 40px;
+}
+
+.greyBox {
+  max-width: 100%;
+  width: 50%;
+  margin: 20px auto;
+  position: relative;
+  background: var(--color-form);
+  border-radius: 20px;
+  box-shadow: 22px 3px 53px -17px rgba(115, 98, 98, 0.87);
+  padding: 30px;
+  backdrop-filter: blur(4px);
+  margin-bottom: 80px;
+}
+
+.formfield {
+  color: var(--color-formContent);
+  font-weight: bold;
+}
+
+.ageBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.common {
+  display: block;
+  width: 40%;
+}
+
+.tnc {
+  color: var(--color-orange);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.agreement {
+  color: var(--color-notice);
+  font-weight: 500;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
