@@ -10,10 +10,6 @@
   text-decoration: none;
 }
 
-.head {
-  overflow-x: hidden;
-}
-
 .navName:hover {
   color: var(--color-medorange);
   border-bottom: solid 2px var(--color-medorange);

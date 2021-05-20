@@ -1,3 +1,7 @@
 .first {
   margin-bottom: 30px;
 }
+
+.landing {
+  width: fit-content;
+}
