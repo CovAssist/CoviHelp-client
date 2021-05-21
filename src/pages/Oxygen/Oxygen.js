@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../../components/Footer/Footer';
-import List from '../../components/List/List';
+import OxygenList from '../../components/OxygenList/OxygenList';
 import MainHeader from '../../components/MainHeader/MainHeader';
 
 function Oxygen() {
@@ -12,13 +12,13 @@ function Oxygen() {
         <div className="vaccant__list">
           <div className="vaccant__ylw">verified in last 24 hours*</div>
           <div className="vaccant__lists">
-            <List />
+            <OxygenList />
           </div>
         </div>
         <div className="vaccant__list">
           <div className="vaccant__ylw">verified in last 24 hours*</div>
           <div className="vaccant__lists">
-            <List />
+            <OxygenList />
           </div>
         </div>
       </div>
