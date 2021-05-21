@@ -27,7 +27,7 @@ function Contact() {
             <div className="mailicon">
               <MailIcon />
             </div>
-            <div className="mailid">covidcare111@gmail.com</div>
+            <div className="mailid">covidcare111 @gmail.com</div>
           </div>
         </div>
         <div className="greyBoxm">
@@ -51,7 +51,7 @@ function Contact() {
                 placeholder="Enter your message here..."
               ></textarea>
             </div>
-            <div className="form__subBoxm">
+            <div className="form__submit">
               <Button buttonName="submit" label="Submit" />
             </div>
           </div>
