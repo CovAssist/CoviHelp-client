@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   position: fixed;
+  background-color: transparent;
 }
 
 .disclaimerBox {
@@ -27,6 +28,7 @@
   font-weight: 500;
   margin-top: 20px;
 }
+
 .btn {
   width: 300px;
   margin-top: 40px;
