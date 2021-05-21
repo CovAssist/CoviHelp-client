@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Disclaimer from './components/Disclaimer/Disclaimer';
 import VaccantBed from './pages/VaccantBed/VaccantBed';
@@ -9,21 +9,21 @@ import PatientRegistration from './pages/PatientRegistration/PatientRegistration
 import Volunteer from './pages/VolunteerRegistration/Volunteer';
 import Contact from './pages/Contact/Contact';
 import Oxygen from './pages/Oxygen/Oxygen';
+import { useSessionStorage } from './useSessionStorage';
 
 const App = () => {
-  const [modal, setmodal] = useState(false);
-
-  const openModal = () => {
-    setmodal((prev) => !prev);
-  };
+  const [termsAccepted, setTermsAccepted] = useSessionStorage('terms', false);
+  if (!termsAccepted) {
+    return (
+      <>
+        <Disclaimer modal={termsAccepted} setModal={setTermsAccepted} />
+      </>
+    );
+  }
   return (
     <div className="app">
       <Router>
         <Switch>
-          <Route path="/disclaimer">
-            <Disclaimer modal={modal} setmodal={setmodal} />
-            <button onClick={openModal}>showModal</button>
-          </Route>
           <Route path="/bed">
             <VaccantBed />
           </Route>
