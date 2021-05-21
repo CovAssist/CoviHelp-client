@@ -3,6 +3,7 @@ import Footer from '../../components/Footer/Footer';
 import OxygenList from '../../components/OxygenList/OxygenList';
 import MainHeader from '../../components/MainHeader/MainHeader';
 import './Oxygen.css';
+import '../VaccantBed/VaccantBed.css';
 
 function Oxygen() {
   return (
