@@ -4,9 +4,6 @@ body {
     'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-  display: none;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
