@@ -82,7 +82,7 @@ const PatientForm = () => {
   return (
     <div className="Donor">
       <form onSubmit={handleSubmit}>
-        <p className="personal">Personal Information</p>
+        <div className="personal">Personal Information</div>
         <div className="greyBox">
           <div className="form__subBox">
             <label className="formfield">Patient Name</label>
@@ -195,18 +195,12 @@ const PatientForm = () => {
           </div>
         </div>
 
-
-        <div className="form__subBox">
+        <div className="form__submit">
           <Button buttonName="submit" label="Submit" />
-
-        
         </div>
-          
-       
       </form>
     </div>
   );
 };
-
 
 export default PatientForm;
