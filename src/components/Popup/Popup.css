@@ -4,12 +4,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-lightBlue);
+  background-color: rgba(5, 5, 5, 0.692);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  overflow: hidden;
 }
 
 .popup__mid {
@@ -33,7 +32,7 @@
   margin: auto;
 }
 
-.close-btn > .MuiSvgIcon-root {
+.close-btn>.MuiSvgIcon-root {
   color: var(--color-medorange);
   cursor: pointer;
   font-size: 2.7rem;

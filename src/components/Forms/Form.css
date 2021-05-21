@@ -1,24 +1,19 @@
 .donorinput {
   display: block;
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
   padding: 0.3rem 0.4rem;
   border-radius: 0.2rem;
-  /* border-style: none; */
+  border-style: none;
   margin-top: 0.4rem;
-
   color: var(--color-medorange);
   font-size: 1.4rem;
-
-  
 }
 
 .donorinput:hover {
   border: 3px solid var(--color-orange);
   transition: transform 5ms ease-in-out;
-}
-.Donor{
-  margin: 50px;
+  outline: none;
 }
 
 .Contact {
@@ -27,38 +22,39 @@
 }
 
 .personal {
-  margin: 0px 25%;
   position: relative;
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
   color: #3e516a;
   margin-top: 40px;
+  text-align: center;
 }
-
 
 .greyBox {
   max-width: 100%;
   width: 80%;
+  margin: auto;
   background: var(--color-form);
   border-radius: 20px;
   box-shadow: 22px 3px 53px -17px rgba(115, 98, 98, 0.87);
   padding: 30px;
   backdrop-filter: blur(4px);
-  margin: 2% auto 6%;
+  margin-top: 4%;
 }
 
-@media(min-width: 576px) {
+@media (min-width: 576px) {
   .greyBox {
     max-width: 540px;
     max-height: auto;
+    width: 100%;
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .greyBox {
     max-width: 720px;
     max-height: auto;
-
+    width: 100%;
   }
 }
 
@@ -73,18 +69,19 @@
   margin: 10% auto;
 }
 
-@media(min-width: 576px) {
+@media (min-width: 576px) {
   .greyBoxm {
     max-width: 540px;
     max-height: auto;
+    width: 100%;
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .greyBoxm {
     max-width: 720px;
     max-height: auto;
-
+    width: 100%;
   }
 }
 
@@ -94,20 +91,38 @@
   font-size: 1.12rem;
 }
 
+.form__subBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .ageBox {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.form__subBox {
-  margin: 0 2.5rem 1.2rem 2rem;
-}
-
-
 .common {
   display: block;
   width: 40%;
+}
+
+@media (max-width: 600px) {
+  .ageBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .common {
+    width: 100%;
+  }
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 
 .tnc {
@@ -120,8 +135,3 @@
   color: var(--color-notice);
   font-weight: 500;
 }
-
-/* .submit {
-  display: flex;
-  justify-content: center;
-} */
