@@ -13,6 +13,7 @@
 .donorinput:hover {
   border: 3px solid var(--color-orange);
   transition: transform 5ms ease-in-out;
+  outline: none;
 }
 
 .Contact {
@@ -101,6 +102,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .common {
   display: block;
   width: 40%;
@@ -111,6 +113,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
   .common {
     width: 100%;
   }
