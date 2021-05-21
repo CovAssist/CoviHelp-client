@@ -44,12 +44,6 @@
   margin: 10px;
 }
 
-@media (max-width: 800px) {
-  .contactBox {
-    flex-direction: column;
-  }
-}
-
 .callicon > .MuiSvgIcon-root {
   color: var(--color-medorange);
   font-size: 3rem;
@@ -95,20 +89,6 @@
   margin: 10% auto;
 }
 
-
-@media (min-width: 576px) {
-  .greyBoxm {
-    max-width: 540px;
-    max-height: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .greyBoxm {
-    max-width: 720px;
-    max-height: auto;
-  }
-}
 .form__subBoxm {
   text-align: center;
 }
@@ -157,11 +137,6 @@
   border: 3px solid var(--color-orange);
   transition: transform 5ms ease-in-out;
 }
-@media screen and (max-width: 600px) {
-  .contact {
-    width: fit-content;
-  }
-}
 
 ::-moz-placeholder {
   /* Firefox 19+ */
@@ -178,8 +153,10 @@
   font-size: 1.4rem;
 }
 
-
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
+  .contact {
+    width: fit-content;
+  }
   ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     font-size: 1.2rem;
@@ -204,23 +181,16 @@
   }
 }
 
-@media(min-width: 576px) {
+@media (min-width: 576px) {
   .greyBoxm {
     max-width: 540px;
     max-height: auto;
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .greyBoxm {
     max-width: 720px;
     max-height: auto;
-
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .contact {
-    width: fit-content;
   }
 }
