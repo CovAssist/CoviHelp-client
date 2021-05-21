@@ -27,7 +27,7 @@ function Contact() {
             <div className="mailicon">
               <MailIcon />
             </div>
-            <div className="mailid">covidcare111@gmail.com</div>
+            <div className="mailid">covidcare111 @gmail.com</div>
           </div>
         </div>
         <div className="greyBoxm">
