@@ -51,7 +51,7 @@ function Contact() {
                 placeholder="Enter your message here..."
               ></textarea>
             </div>
-            <div className="form__subBoxm">
+            <div className="form__submit">
               <Button buttonName="submit" label="Submit" />
             </div>
           </div>

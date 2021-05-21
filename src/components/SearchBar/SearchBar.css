@@ -145,6 +145,7 @@
     margin-top: 40px;
     width: 80%;
     border: 0.5px dotted rgb(15, 15, 15);
+    padding: 10px;
   }
 
   .searchIcon > .MuiSvgIcon-root {
