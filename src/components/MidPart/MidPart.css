@@ -36,8 +36,13 @@
 .box {
   border: solid 6px var(--color-greyblue);
   border-radius: 10px;
-  padding: 52px 50px;
-  text-align: center;
+  width: 25vw;
+  height: 30vh;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(236, 236, 236, 0.685);
 }
 
@@ -86,24 +91,55 @@
   flex: 1;
 }
 @media screen and (max-width: 900px) {
-
   .illust {
     display: none;
   }
 
-    .boxex{
-        display: block;
-    }
-    .intotalCasen{
-        font-size: 2rem;
-    }
-    .intotalCase{
-        font-size: 0.9rem;
-    }
-    .intotalRecovern{
-        font-size: 2rem;
-    }
-    .intotalRecover{
-        font-size: 0.9rem;
-    }
+  .box {
+    border: solid 6px var(--color-greyblue);
+    border-radius: 10px;
+    width: 50vw;
+    height: 20vh;
+    text-align: start;
+    background-color: rgba(236, 236, 236, 0.685);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .midPart {
+    height: auto;
+    padding: 20px;
+  }
+
+  .regis {
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .state {
+    color: var(--color-medorange);
+    font-size: 1.8rem;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .boxex {
+    display: block;
+  }
+  .intotalCasen {
+    font-size: 1.8rem;
+  }
+  .intotalCase {
+    font-size: 0.9rem;
+  }
+  .intotalRecovern {
+    font-size: 1.8rem;
+  }
+  .intotalRecover {
+    font-size: 0.9rem;
+  }
 }
