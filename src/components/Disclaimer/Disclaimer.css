@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   position: fixed;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.767);
 }
 
 .disclaimerBox {
@@ -49,4 +49,10 @@
 .image__disclaimer {
   height: 55vh;
   width: 50vw;
+}
+
+@media (max-width: 500px) {
+  .image__disclaimer {
+    display: none;
+  }
 }
