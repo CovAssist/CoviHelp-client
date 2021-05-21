@@ -61,3 +61,12 @@
   height: 100vh;
   width: 100%
 }
+@media screen and (max-width: 900px) {
+  .vaccant {
+    width: fit-content;
+  }
+  .vaccant__box{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
