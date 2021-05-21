@@ -12,13 +12,15 @@ function Oxygen() {
       <div className="vaccant__beds">
         <div className="vaccant__title">Oxygen Availbility</div>
         <div className="vaccant__list">
-          <div className="vaccant__ylw">verified in last 24 hours*</div>
+          <div className="vaccant__ylw">
+            Verified in <b>last 24 hours*</b>
+          </div>
           <div className="vaccant__lists">
             <OxygenList />
           </div>
         </div>
         <div className="vaccant__list">
-          <div className="vaccant__ylw">verified in last 24 hours*</div>
+          <div className="vaccant__ylw">Older leads</div>
           <div className="vaccant__lists">
             <OxygenList />
           </div>
