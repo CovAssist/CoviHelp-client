@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext, useRef } from 'react';
 import './SearchBar.css';
 import Button from '../Button/Button';
 import SearchIcon from '@material-ui/icons/Search';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { Link } from 'react-router-dom';
+import { ContextProvider } from '../../contextapi';
 
 const SearchBar = () => {
+  const { setSearchBeds } = useContext(ContextProvider);
+  const search = useRef();
   return (
     <div className="searchBar">
       <div className="type">
@@ -25,9 +28,15 @@ const SearchBar = () => {
         <div className="locateIcon">
           <LocationOnIcon />
         </div>
-        <input className="loct" type="text" placeholder="Your Location" />
+        <input className="loct" type="text" placeholder="Your City" ref={search} />
       </div>
-      <Button buttonName="search" label="search" />
+      <Button
+        buttonName="search"
+        label="search"
+        onClick={() => {
+          return setSearchBeds(search.current.value);
+        }}
+      />
     </div>
   );
 };
