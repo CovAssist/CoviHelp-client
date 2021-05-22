@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
-import { ListItems } from './ListItems';
+import React, { useEffect, useState } from 'react';
+import { getVacantBeds } from '../../api/index';
 import './List.css';
 
 const List = () => {
   const [clicked, setClicked] = useState(false);
-
+  const [listItems, setListItems] = useState([]);
+  useEffect(() => {
+    const insertData = async () => {
+      const data = await getVacantBeds();
+      console.log(data);
+      setListItems(data.data.data);
+    };
+    insertData();
+  }, []);
   const toggle = (index) => {
     if (clicked === index) {
       //if clicked question is already active, then close it
@@ -16,14 +24,14 @@ const List = () => {
 
   return (
     <div className="list">
-      {ListItems.map((item, index) => {
+      {listItems.map((item, index) => {
         return (
           <>
             <div onClick={() => toggle(index)} key={index} className="itemone">
               <div className="simple__list">
                 <div className="simpplist">
-                  <div className="simpplist__title">{item.hospital}</div>
-                  <div className="simpplist__time">{item.lastVerified}</div>
+                  <div className="simpplist__title">{item.hosName}</div>
+                  <div className="simpplist__time">{item.verificationTime}</div>
                 </div>
               </div>
             </div>
@@ -32,11 +40,11 @@ const List = () => {
                 <div className="clicked__top">
                   <div className="clicked__elem">
                     <div className="clicked__heading">Hospital Name</div>
-                    <div className="clicked__bold clicked__filing">{item.hospital}</div>
+                    <div className="clicked__bold clicked__filing">{item.hosName}</div>
                   </div>
                   <div className="clicked__elem">
                     <div className="clicked__heading">Last Time Verified</div>
-                    <div className="clicked__filing">{item.lastVerified}</div>
+                    <div className="clicked__filing">{item.verificationTime}</div>
                   </div>
                 </div>
                 <div className="clicked__bot">
@@ -46,11 +54,11 @@ const List = () => {
                   </div>
                   <div className="clicked__elem">
                     <div className="clicked__heading">Phone no.</div>
-                    <div className="clicked__filing">{item.phone}</div>
+                    <div className="clicked__filing">{item.hosContact}</div>
                   </div>
                   <div className="clicked__elem">
                     <div className="clicked__heading">Details</div>
-                    <div className="clicked__filing">{item.details}</div>
+                    <div className="clicked__filing">{item.description}</div>
                   </div>
                 </div>
               </div>
