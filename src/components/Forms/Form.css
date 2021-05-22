@@ -5,20 +5,53 @@
   padding: 0.4rem 0.4rem;
   border-radius: 0.2rem;
   border-style: none;
-  margin: 0.4rem 0px ;
-  color: var(--color-medorange);
+  margin: 0.5rem 0px;
+  color: var(--color-grey);
   font-size: 1.4rem;
+  margin-bottom: 0.7rem;
 }
 
 .donorinput:hover {
-  border: 3px solid var(--color-orange);
-  transition: transform 5ms ease-in-out;
-  outline: none;
+  outline: 3px solid var(--color-orange);
 }
 
 .Contact {
   width: 100%;
   padding: 40px 0;
+}
+
+.checkboxvalue {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.4rem 0.4rem;
+  margin: 0.4rem 0px;
+  color: var(--color-grey);
+  font-size: 1.4rem;
+  background-color: var(--color-white);
+}
+
+.addFile {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.4rem 0.4rem;
+  margin: 0.4rem 0px;
+  color: var(--color-grey);
+  font-size: 1.4rem;
+}
+
+input:required:invalid {
+  border: 1px solid red;
+  outline: none;
+}
+
+input:required:hover {
+  opacity: 2;
+}
+textarea:required:invalid {
+  border: 1px solid red;
+  outline: none;
 }
 
 .personal {
