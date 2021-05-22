@@ -1,0 +1,48 @@
+.registration {
+  display: flex;
+  justify-content: center;
+}
+
+.register {
+  color: var(--color-medBlue);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 8%;
+}
+
+.note {
+  color: var(--color-orange);
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+
+.pFooter{
+  display: flex;
+  margin: auto;
+}
+.donorMessage {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+}
+
+.notneeded {
+  border: 10px solid var(--color-medorange);
+  border-radius: 10px;
+  color: var(--color-notice);
+  text-align: justify;
+  padding: 30px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.fill {
+  margin: 8% auto;
+}
