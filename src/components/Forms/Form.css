@@ -31,6 +31,16 @@
   background-color: var(--color-white);
 }
 
+.addFile {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.4rem 0.4rem;
+  margin: 0.4rem 0px;
+  color: var(--color-grey);
+  font-size: 1.4rem;
+}
+
 input:required:invalid {
   border: 1px solid red;
   outline: none;

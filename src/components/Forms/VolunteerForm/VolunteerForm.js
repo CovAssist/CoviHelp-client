@@ -56,7 +56,7 @@ const DonorForm = () => {
                   name="age"
                   onChange={updateInput}
                   value={formData.age || ''}
-              required
+                  required
                 />
               </div>
               <div className="common">
@@ -67,7 +67,7 @@ const DonorForm = () => {
                   name="city"
                   onChange={updateInput}
                   value={formData.city || ''}
-              required
+                  required
                 />
               </div>
             </div>
@@ -129,9 +129,9 @@ const DonorForm = () => {
               Hindi
             </label>
             <label className="checkboxvalue">
-              Other: 
+              Other:
               <input
-                className='donorinput'
+                className="donorinput"
                 type="text"
                 name="languages"
                 onChange={updateInput}
@@ -246,8 +246,9 @@ const DonorForm = () => {
               name="accept"
               onChange={updateInput}
               value={formData.accept || ''}
+              required
             />
-            <label className="tnc">Accept</label>
+            <label className="tnc">ACCEPT</label>
           </div>
         </div>
 

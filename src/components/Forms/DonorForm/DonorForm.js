@@ -197,7 +197,9 @@ const DonorForm = () => {
             />
           </div>
           <div className="form__subBox">
-            <label className="formfield">Have you suffered from any of the diseases earlier? *</label>
+            <label className="formfield">
+              Have you suffered from any of the diseases earlier? *
+            </label>
             <input
               className="donorinput"
               type="diseases"
