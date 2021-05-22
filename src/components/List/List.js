@@ -1,20 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import { getVacantBeds } from '../../api/index';
+import React, { useEffect, useState, useContext } from 'react';
+import { getListData as getVacantBeds } from '../../api/index';
+import { ContextProvider } from '../../contextapi';
 import './List.css';
 
 const List = () => {
   const [clicked, setClicked] = useState(false);
   const [listItems, setListItems] = useState([]);
+  const { searchBeds } = useContext(ContextProvider);
   useEffect(() => {
+    console.log('beds');
     const insertData = async () => {
-      const data = await getVacantBeds();
+      const data = await getVacantBeds(searchBeds, 'beds');
       console.log(data);
       if (data) {
         setListItems(data.data.data);
       }
     };
     insertData();
-  }, []);
+  }, [searchBeds]);
   const toggle = (index) => {
     if (clicked === index) {
       //if clicked question is already active, then close it
@@ -51,8 +54,8 @@ const List = () => {
                 </div>
                 <div className="clicked__bot">
                   <div className="clicked__elem">
-                    <div className="clicked__heading">Address</div>
-                    <div className="clicked__filing">{item.address}</div>
+                    <div className="clicked__heading">City</div>
+                    <div className="clicked__filing">{item.hoscity}</div>
                   </div>
                   <div className="clicked__elem">
                     <div className="clicked__heading">Phone no.</div>

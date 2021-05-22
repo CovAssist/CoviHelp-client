@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
-import { ListItemsO } from './ListItemsO';
+import React, { useContext, useEffect, useState } from 'react';
 import '../List/List.css';
-
+import { ContextProvider } from '../../contextapi';
+import { getListData as getOxygen } from '../../api/index';
 const List = () => {
   const [clicked, setClicked] = useState(false);
-
+  const [listItems, setListItems] = useState([]);
+  const { searchBeds } = useContext(ContextProvider);
+  useEffect(() => {
+    const insertData = async () => {
+      const data = await getOxygen(searchBeds, 'oxygen');
+      console.log(data);
+      if (data) {
+        setListItems(data.data.data);
+      }
+    };
+    insertData();
+  }, [searchBeds]);
   const toggle = (index) => {
     if (clicked === index) {
       //if clicked question is already active, then close it
@@ -16,13 +27,13 @@ const List = () => {
 
   return (
     <div className="list">
-      {ListItemsO.map((item, index) => {
+      {listItems.map((item, index) => {
         return (
           <>
             <div onClick={() => toggle(index)} key={index} className="itemone">
               <div className="simple__list">
                 <div className="simpplist">
-                  <div className="simpplist__title">{item.storeName}</div>
+                  <div className="simpplist__title">{item.supplierName}</div>
                   <div className="simpplist__time">{item.lastVerified}</div>
                 </div>
               </div>
@@ -32,7 +43,7 @@ const List = () => {
                 <div className="clicked__top">
                   <div className="clicked__elem">
                     <div className="clicked__heading">Store Name</div>
-                    <div className="clicked__bold clicked__filing">{item.storeName}</div>
+                    <div className="clicked__bold clicked__filing">{item.supplierName}</div>
                   </div>
                   <div className="clicked__elem">
                     <div className="clicked__heading">Last Time Verified</div>
@@ -42,15 +53,15 @@ const List = () => {
                 <div className="clicked__bot">
                   <div className="clicked__elem">
                     <div className="clicked__heading">Address</div>
-                    <div className="clicked__filing">{item.address}</div>
+                    <div className="clicked__filing">{item.city}</div>
                   </div>
                   <div className="clicked__elem">
                     <div className="clicked__heading">Phone no.</div>
-                    <div className="clicked__filing">{item.phone}</div>
+                    <div className="clicked__filing">{item.supplierContact}</div>
                   </div>
                   <div className="clicked__elem">
                     <div className="clicked__heading">Details</div>
-                    <div className="clicked__filing">{item.details}</div>
+                    <div className="clicked__filing">{item.description}</div>
                   </div>
                 </div>
               </div>
