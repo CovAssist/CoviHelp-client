@@ -70,7 +70,7 @@ const DonorForm = () => {
           </div>
           <div className="form__subBox">
             {' '}
-            <label className="formfield">Your Email</label>
+            <label className="formfield">Your Email ID</label>
             <input
               className="donorinput"
               type="email"
@@ -80,7 +80,7 @@ const DonorForm = () => {
             />
           </div>
           <div className="form__subBox">
-            <label className="formfield">Your Mobile No.</label>
+            <label className="formfield">Your WhatsApp enabled Mobile No.</label>
             <input
               className="donorinput"
               type="no"
@@ -93,7 +93,7 @@ const DonorForm = () => {
         <div className="greyBox">
           <div className="form__subBox">
             {' '}
-            <label className="formfield">How can you help in arranging Donors ?</label>
+            <label className="formfield">What has motivated you to volunteer for Covid assistance work?</label>
             <textarea
               className="donorinput"
               type="text"
@@ -105,7 +105,7 @@ const DonorForm = () => {
         </div>
         <div className="greyBox">
           <div className="form__subBox">
-            <label className="formfield">Do you have any message for us ?</label>
+            <label className="formfield">How did you come to know about us?</label>
             <textarea
               className="donorinput"
               type="text"
@@ -113,6 +113,20 @@ const DonorForm = () => {
               onChange={updateInput}
               value={formData.message || ''}
             ></textarea>
+          </div>
+        </div>
+        <div className="greyBox">
+          <div classname="form__subBox">
+            <p className="agreement">
+            I understand that this can be a time-sensitive volunteering activity and that I intend to honor my commitment with full honesty.
+            </p>
+            <input
+              type="checkbox"
+              name="accept"
+              onChange={updateInput}
+              value={formData.accept || ''}
+            />
+            <label className="tnc">Accept</label>
           </div>
         </div>
 
