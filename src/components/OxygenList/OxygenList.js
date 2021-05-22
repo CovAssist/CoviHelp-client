@@ -9,8 +9,8 @@ const List = () => {
   useEffect(() => {
     const insertData = async () => {
       const data = await getOxygen(searchBeds, 'oxygen');
-      console.log(data);
-      if (data) {
+      console.log(data, 'hii');
+      if (data && data.data) {
         setListItems(data.data.data);
       }
     };

@@ -1,5 +1,6 @@
 import axios from 'axios';
-const baseUrl = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000';
+const baseUrl =
+  process.env.NODE_ENV === 'production' ? 'https://covhelp.herokuapp.com' : 'http://localhost:5000';
 
 export const getListData = async (city, util) => {
   try {

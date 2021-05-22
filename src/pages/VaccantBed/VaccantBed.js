@@ -8,7 +8,7 @@ function VaccantBed() {
   return (
     <div className="vaccant">
       <div className="first">
-      <MainHeader />
+        <MainHeader />
       </div>
       <div className="vaccant__dash">
         <div className="vaccant__dashboard">
@@ -32,13 +32,9 @@ function VaccantBed() {
         <div className="vaccant__beds">
           <div className="vaccant__title">Vaccant Beds Available</div>
           <div className="vaccant__list">
-            <div className="vaccant__ylw">Verified in <b>last 24 hours*</b></div>
-            <div className="vaccant__lists">
-              <List />
+            <div className="vaccant__ylw">
+              Verified in <b>last 24 hours*</b>
             </div>
-          </div>
-          <div className="vaccant__list">
-            <div className="vaccant__ylw">Older Leads</div>
             <div className="vaccant__lists">
               <List />
             </div>
