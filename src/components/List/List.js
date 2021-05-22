@@ -8,11 +8,10 @@ const List = () => {
   const [listItems, setListItems] = useState([]);
   const { searchBeds } = useContext(ContextProvider);
   useEffect(() => {
-    console.log('beds');
     const insertData = async () => {
       const data = await getVacantBeds(searchBeds, 'beds');
       console.log(data);
-      if (data) {
+      if (data && data.data) {
         setListItems(data.data.data);
       }
     };
@@ -31,7 +30,7 @@ const List = () => {
     <div className="list">
       {listItems.map((item, index) => {
         return (
-          <>
+          <React.Fragment key={index}>
             <div onClick={() => toggle(index)} key={index} className="itemone">
               <div className="simple__list">
                 <div className="simpplist">
@@ -68,7 +67,7 @@ const List = () => {
                 </div>
               </div>
             ) : null}
-          </>
+          </React.Fragment>
         );
       })}
     </div>
