@@ -9,12 +9,7 @@ function Disclaimer({ modal, setModal }) {
           <div className="container">
             <div className="disclaimer">DISCLAIMER</div>
             <div className="para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta pulvinar massa,
-              eu lacinia lectus. Quisque eget purus quis est auctor fringilla. In dignissim
-              consectetur ipsum ac placerat. Quisque viverra purus pellentesque ultricies pretium.
-              Nullam tortor enim, volutpat et enim a, faucibus auctor risus. Morbi eu molestie
-              massa. Integer vel dui in quam pulvinar viverra a id lectus. Maecenas interdum sapien
-              ipsum, in pellentesque velit blandit gravida.
+            All the information presented here is publicly available. This initiative is non-profit and only for social welfare. We shall not be held liable for any loss that you may incur by relying on this information. We strongly advise you against forwarding advance money to any vendor(s) or service provider(s) in order to safe-guard you from any kind of fraud. Please report to govt administration as well as us if someone is asking some vague amounts. Use of medicines/resources must be done in keeping with the doctor's advice & government policy.
             </div>
             <button className="btn" onClick={() => setModal(true)}>
               {' '}

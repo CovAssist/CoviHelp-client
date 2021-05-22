@@ -32,7 +32,6 @@
 }
 
 .list {
-  width: 60%;
   margin: auto;
 }
 
@@ -41,8 +40,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 96%;
-  height: 50vh;
+  height: auto;
   margin: 20px;
   padding: 10px;
   background-color: var(--color-medBlue);
