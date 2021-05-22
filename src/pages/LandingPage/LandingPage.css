@@ -1,7 +1,7 @@
 .first {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .landing {
-    overflow-x: hidden;
+    width: fit-content;
 }

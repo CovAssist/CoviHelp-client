@@ -1,87 +1,145 @@
 .midPart {
-    background-image: url('../../Assests/undraw_connected_world_wuay.png');
-    height: 100vh;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+  background-image: url('../../Assests/undraw_connected_world_wuay.png');
+  height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 100%;
-    margin: auto;
-    flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  flex: 0.7;
 }
 
 .state {
-    color: var(--color-medorange);
-    font-size: 38px;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 40px;
+  color: var(--color-medorange);
+  font-size: 2.5rem;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .boxex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .box {
-    border: solid 6px var(--color-greyblue);
-    border-radius: 10px;
-    padding: 52px 50px;
-    text-align: center;
-    background-color: rgba(236, 236, 236, 0.685);
+  border: solid 6px var(--color-greyblue);
+  border-radius: 10px;
+  width: 25vw;
+  height: 30vh;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(236, 236, 236, 0.685);
 }
 
 .intotalCase {
-    color: red;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+  color: red;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
 }
 
 .intotalCasen {
-    color: red;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 48px;
-    font-weight: bold;
+  color: red;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .intotalRecover {
-    color: var(--color-green);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+  color: var(--color-green);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
 }
 
 .intotalRecovern {
-    color: var(--color-green);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 48px;
-    font-weight: bold;
+  color: var(--color-green);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .regis {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
 .regisButton {
-    flex: 0.8;
-    display: flex;
-    flex-direction: column;
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
 }
 
 .illust {
-    width: 35vw;
-    flex: 1;
+  width: 35vw;
+  flex: 1;
+}
+@media screen and (max-width: 900px) {
+  .illust {
+    display: none;
+  }
+
+  .box {
+    border: solid 6px var(--color-greyblue);
+    border-radius: 10px;
+    width: 50vw;
+    height: 20vh;
+    text-align: start;
+    background-color: rgba(236, 236, 236, 0.685);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .midPart {
+    height: auto;
+    padding: 20px;
+  }
+
+  .regis {
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .state {
+    color: var(--color-medorange);
+    font-size: 1.8rem;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .boxex {
+    display: block;
+  }
+  .intotalCasen {
+    font-size: 1.8rem;
+  }
+  .intotalCase {
+    font-size: 0.9rem;
+  }
+  .intotalRecovern {
+    font-size: 1.8rem;
+  }
+  .intotalRecover {
+    font-size: 0.9rem;
+  }
 }

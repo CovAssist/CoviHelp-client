@@ -1,17 +1,13 @@
 .navLinks {
   display: flex;
-  flex: 0.6;
+  flex: 1;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   color: var(--color-white);
   text-decoration: none;
-}
-
-.head {
-  overflow-x: hidden;
 }
 
 .navName:hover {
@@ -49,5 +45,12 @@ a:active {
 .logo {
   font-family: 'Roboto', sans-serif;
   color: var(--color-white);
-  font-size: 28px;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
 }

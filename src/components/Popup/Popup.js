@@ -1,8 +1,7 @@
 import React from 'react';
-import { useState } from 'react';
 import './Popup.css';
 import CancelIcon from '@material-ui/icons/Cancel';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Button from '../Button/Button';
 import { auth, provider } from '../../firebase';
 
@@ -29,8 +28,7 @@ function Popup(props) {
             covi<span className="care">Care</span>
           </div>
           <div className="instruct">
-            you need to register/ login first if you want to donate <br></br> for the secuirty
-            purpose
+            you need to register/ login first if you want to donate for the secuirty purpose
           </div>
           <div className="googled" onClick={signIn}>
             <Button buttonName="google" label="Google" />

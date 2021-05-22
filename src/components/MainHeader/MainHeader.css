@@ -1,7 +1,7 @@
 .mainHeader {
   background-image: url('../../Assests/landingBG.png');
 
-  width: 100%;
+  width: auto;
   height: 100vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -39,4 +39,17 @@
 .moto {
   color: var(--color-greyblue);
   font-size: 25px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .mainHeader {
+    height: auto;
+    width: auto;
+    padding-bottom: 40px;
+  }
+
+  .covidresearch {
+    display: none;
+  }
 }

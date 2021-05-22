@@ -36,3 +36,8 @@
     color: var(--color-lightBlue);
     font-size: 1.8rem;
 }
+@media screen and (max-width:600px) {
+    .footer{
+        display: block;
+    }
+}

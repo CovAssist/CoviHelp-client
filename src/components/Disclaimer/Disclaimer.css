@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.767);
 }
 
 .disclaimerBox {
@@ -27,6 +28,7 @@
   font-weight: 500;
   margin-top: 20px;
 }
+
 .btn {
   width: 300px;
   margin-top: 40px;
@@ -47,4 +49,10 @@
 .image__disclaimer {
   height: 55vh;
   width: 50vw;
+}
+
+@media (max-width: 500px) {
+  .image__disclaimer {
+    display: none;
+  }
 }

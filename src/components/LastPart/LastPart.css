@@ -1,6 +1,6 @@
 .symptoms {
   color: var(--color-medBlue);
-  font-size: 48px;
+  font-size: 3rem;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   text-align: center;
@@ -16,7 +16,7 @@
 
 .subsymp {
   color: var(--color-medBlue);
-  font-size: 22px;
+  font-size: 1.6rem;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   text-align: center;
@@ -54,7 +54,63 @@
   height: 4rem;
 }
 
-.send>.MuiSvgIcon-root {
+.send > .MuiSvgIcon-root {
   font-size: 45px;
   cursor: pointer;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 3rem;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 3rem;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 3rem;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 3rem;
+}
+.send > .MuiSvgIcon-root {
+  font-size: 4rem;
+}
+@media screen and (max-width: 900px) {
+  .symptoms {
+    font-size: 1.5rem;
+  }
+  .subsymp {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mailbox {
+    padding: 10px;
+    margin: 20px;
+  }
+  .symimg {
+    width: 100%;
+    margin: 0px;
+  }
+  .send > .MuiSvgIcon-root {
+    font-size: 2rem;
+  }
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 1.2rem;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 1.2rem;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 1.2rem;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 1.2rem;
+  }
 }
