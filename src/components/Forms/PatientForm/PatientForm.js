@@ -125,9 +125,9 @@ const PatientForm = () => {
             <input
               className="donorinput"
               type="text"
-              name="name"
+              name="contactPerson"
               onChange={updateInput}
-              value={formData.name || ''}
+              value={formData.contactPerson || ''}
               required
             />
           </div>
