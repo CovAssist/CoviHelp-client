@@ -9,7 +9,9 @@ const List = () => {
     const insertData = async () => {
       const data = await getVacantBeds();
       console.log(data);
-      setListItems(data.data.data);
+      if (data) {
+        setListItems(data.data.data);
+      }
     };
     insertData();
   }, []);
