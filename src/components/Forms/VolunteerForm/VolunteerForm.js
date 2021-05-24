@@ -2,8 +2,34 @@ import React, { useState } from 'react';
 import Button from '../../Button/Button';
 
 const DonorForm = () => {
-  const [formData, setFormData] = useState({});
-
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    age: '',
+    days: [],
+    mobileNo: '',
+    message: '',
+    city: '',
+    accept: 'false',
+    languages: [],
+    college: '',
+    weekdaysTime: '',
+    weekendTime: '',
+    source: '',
+  });
+  const [languages, setLanguages] = useState({ English: false, Hindi: false });
+  const [days, setDays] = useState({
+    sunday: false,
+    monday: false,
+    tuesday: false,
+    wednesday: false,
+    thursday: false,
+    friday: false,
+    saturday: false,
+  });
+  const updateDays = (e) => {
+    setDays((prev) => ({ ...days, [e.target.name]: !prev[e.target.name] }));
+  };
   const updateInput = (e) => {
     setFormData({
       ...formData,
@@ -12,17 +38,37 @@ const DonorForm = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    let arr = [];
+    let arr1 = [];
+    for (var key in languages) {
+      if (languages[key] === true) {
+        arr.push(key);
+      }
+    }
+    for (var key1 in days) {
+      if (days[key1] === true) {
+        arr1.push(key1);
+      }
+    }
+    if (formData.languages) {
+      arr.push(formData.languages);
+    }
+    let data = {
+      languages: arr.toString(),
+      days: arr1.toString(),
+    };
+    console.log(formData);
+    console.log(data);
     setFormData({
       name: '',
       email: '',
       age: '',
-      days: [],
+      days: '',
       mobileNo: '',
       message: '',
       city: '',
       accept: 'false',
-      languages: [],
+      languages: '',
       college: '',
       weekdaysTime: '',
       weekendTime: '',
@@ -114,8 +160,8 @@ const DonorForm = () => {
               <input
                 type="checkbox"
                 name="languages"
-                onChange={updateInput}
-                value={formData.languages || ''}
+                onChange={(e) => setLanguages((prev) => ({ ...languages, English: !prev.English }))}
+                // value={formData.languages || ''}
               />
               English
             </label>
@@ -123,8 +169,8 @@ const DonorForm = () => {
               <input
                 type="checkbox"
                 name="languages"
-                onChange={updateInput}
-                value={formData.languages || ''}
+                onChange={(e) => setLanguages((prev) => ({ ...languages, Hindi: !prev.Hindi }))}
+                //value={formData.languages || ''}
               />
               Hindi
             </label>
@@ -135,7 +181,7 @@ const DonorForm = () => {
                 type="text"
                 name="languages"
                 onChange={updateInput}
-                value={formData.languages || ''}
+                // value={formData.languages || ''}
               />
             </label>
           </div>
@@ -145,8 +191,8 @@ const DonorForm = () => {
             <label className="checkboxvalue">
               <input
                 type="checkbox"
-                name="languages"
-                onChange={updateInput}
+                name="sunday"
+                onChange={updateDays}
                 value={formData.languages || ''}
               />
               Sunday
@@ -154,8 +200,8 @@ const DonorForm = () => {
             <label className="checkboxvalue">
               <input
                 type="checkbox"
-                name="languages"
-                onChange={updateInput}
+                name="monday"
+                onChange={updateDays}
                 value={formData.languages || ''}
               />
               Monday
@@ -163,8 +209,8 @@ const DonorForm = () => {
             <label className="checkboxvalue">
               <input
                 type="checkbox"
-                name="languages"
-                onChange={updateInput}
+                name="tuesday"
+                onChange={updateDays}
                 value={formData.languages || ''}
               />
               Tuesday
@@ -172,8 +218,8 @@ const DonorForm = () => {
             <label className="checkboxvalue">
               <input
                 type="checkbox"
-                name="languages"
-                onChange={updateInput}
+                name="wednesday"
+                onChange={updateDays}
                 value={formData.languages || ''}
               />
               Wednesday
@@ -181,8 +227,8 @@ const DonorForm = () => {
             <label className="checkboxvalue">
               <input
                 type="checkbox"
-                name="languages"
-                onChange={updateInput}
+                name="thursday"
+                onChange={updateDays}
                 value={formData.languages || ''}
               />
               Thursday
@@ -190,8 +236,8 @@ const DonorForm = () => {
             <label className="checkboxvalue">
               <input
                 type="checkbox"
-                name="languages"
-                onChange={updateInput}
+                name="friday"
+                onChange={updateDays}
                 value={formData.languages || ''}
               />
               Friday
@@ -199,8 +245,8 @@ const DonorForm = () => {
             <label className="checkboxvalue">
               <input
                 type="checkbox"
-                name="languages"
-                onChange={updateInput}
+                name="saturday"
+                onChange={updateDays}
                 value={formData.languages || ''}
               />
               Saturday
