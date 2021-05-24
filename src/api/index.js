@@ -25,3 +25,13 @@ export const getListData = async (city, util) => {
     return;
   }
 };
+export const saveVolunteer = async (body) => {
+  try {
+    const { data } = await axios.post(`${baseUrl}/api/volunteer/create?verified=false`, body);
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.log(error);
+    return;
+  }
+};
