@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { saveVolunteer } from '../../../api';
 import Button from '../../Button/Button';
 
 const DonorForm = () => {
@@ -6,13 +7,13 @@ const DonorForm = () => {
     name: '',
     email: '',
     age: '',
-    days: [],
-    mobileNo: '',
-    message: '',
+    days: '',
+    contact: '',
+    motivation: '',
     city: '',
     accept: 'false',
-    languages: [],
-    college: '',
+    languages: '',
+    organisation: '',
     weekdaysTime: '',
     weekendTime: '',
     source: '',
@@ -36,7 +37,7 @@ const DonorForm = () => {
       [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     let arr = [];
     let arr1 = [];
@@ -53,27 +54,39 @@ const DonorForm = () => {
     if (formData.languages) {
       arr.push(formData.languages);
     }
-    let data = {
-      languages: arr.toString(),
-      days: arr1.toString(),
-    };
-    console.log(formData);
-    console.log(data);
-    setFormData({
-      name: '',
-      email: '',
-      age: '',
-      days: '',
-      mobileNo: '',
-      message: '',
-      city: '',
-      accept: 'false',
-      languages: '',
-      college: '',
-      weekdaysTime: '',
-      weekendTime: '',
-      source: '',
-    });
+    const body = formData;
+    body.languages = arr.toString();
+    body.days = arr1.toString();
+    const data = await saveVolunteer(body);
+    if (data.success) {
+      setFormData({
+        name: '',
+        email: '',
+        age: '',
+        days: '',
+        contact: '',
+        motivation: '',
+        city: '',
+        accept: 'false',
+        languages: '',
+        organisation: '',
+        weekdaysTime: '',
+        weekendTime: '',
+        source: '',
+      });
+      setLanguages({ English: false, Hindi: false });
+      setDays({
+        sunday: false,
+        monday: false,
+        tuesday: false,
+        wednesday: false,
+        thursday: false,
+        friday: false,
+        saturday: false,
+      });
+    } else {
+      console.log(data);
+    }
   };
 
   return (
@@ -135,9 +148,9 @@ const DonorForm = () => {
             <input
               className="donorinput"
               type="no"
-              name="mobileNo"
+              name="contact"
               onChange={updateInput}
-              value={formData.mobileNo || ''}
+              value={formData.contact || ''}
               required
             />
           </div>
@@ -147,9 +160,9 @@ const DonorForm = () => {
             <input
               className="donorinput"
               type="text"
-              name="college"
+              name="organisation"
               onChange={updateInput}
-              value={formData.college || ''}
+              value={formData.organisation || ''}
               required
             />
           </div>
@@ -161,7 +174,7 @@ const DonorForm = () => {
                 type="checkbox"
                 name="languages"
                 onChange={(e) => setLanguages((prev) => ({ ...languages, English: !prev.English }))}
-                // value={formData.languages || ''}
+                checked={languages.English}
               />
               English
             </label>
@@ -170,7 +183,7 @@ const DonorForm = () => {
                 type="checkbox"
                 name="languages"
                 onChange={(e) => setLanguages((prev) => ({ ...languages, Hindi: !prev.Hindi }))}
-                //value={formData.languages || ''}
+                checked={languages.Hindi}
               />
               Hindi
             </label>
@@ -181,7 +194,7 @@ const DonorForm = () => {
                 type="text"
                 name="languages"
                 onChange={updateInput}
-                // value={formData.languages || ''}
+                value={formData.languages || ''}
               />
             </label>
           </div>
@@ -189,30 +202,15 @@ const DonorForm = () => {
             {' '}
             <label className="formfield">Days you can volunteer *</label>
             <label className="checkboxvalue">
-              <input
-                type="checkbox"
-                name="sunday"
-                onChange={updateDays}
-                value={formData.languages || ''}
-              />
+              <input type="checkbox" name="sunday" onChange={updateDays} checked={days.sunday} />
               Sunday
             </label>
             <label className="checkboxvalue">
-              <input
-                type="checkbox"
-                name="monday"
-                onChange={updateDays}
-                value={formData.languages || ''}
-              />
+              <input type="checkbox" name="monday" onChange={updateDays} checked={days.monday} />
               Monday
             </label>
             <label className="checkboxvalue">
-              <input
-                type="checkbox"
-                name="tuesday"
-                onChange={updateDays}
-                value={formData.languages || ''}
-              />
+              <input type="checkbox" name="tuesday" onChange={updateDays} checked={days.tuesday} />
               Tuesday
             </label>
             <label className="checkboxvalue">
@@ -220,7 +218,7 @@ const DonorForm = () => {
                 type="checkbox"
                 name="wednesday"
                 onChange={updateDays}
-                value={formData.languages || ''}
+                checked={days.wednesday}
               />
               Wednesday
             </label>
@@ -229,17 +227,12 @@ const DonorForm = () => {
                 type="checkbox"
                 name="thursday"
                 onChange={updateDays}
-                value={formData.languages || ''}
+                checked={days.thursday}
               />
               Thursday
             </label>
             <label className="checkboxvalue">
-              <input
-                type="checkbox"
-                name="friday"
-                onChange={updateDays}
-                value={formData.languages || ''}
-              />
+              <input type="checkbox" name="friday" onChange={updateDays} checked={days.friday} />
               Friday
             </label>
             <label className="checkboxvalue">
@@ -247,7 +240,7 @@ const DonorForm = () => {
                 type="checkbox"
                 name="saturday"
                 onChange={updateDays}
-                value={formData.languages || ''}
+                checked={days.saturday}
               />
               Saturday
             </label>
@@ -262,9 +255,9 @@ const DonorForm = () => {
             <textarea
               className="donorinput"
               type="text"
-              name="message"
+              name="motivation"
               onChange={updateInput}
-              value={formData.message || ''}
+              value={formData.motivation || ''}
               required
             ></textarea>
           </div>
@@ -282,7 +275,7 @@ const DonorForm = () => {
           </div>
         </div>
         <div className="greyBox">
-          <div classname="form__subBox">
+          <div className="form__subBox">
             <p className="agreement">
               I understand that this can be a time-sensitive volunteering activity and that I intend
               to honor my commitment with full honesty.
@@ -290,8 +283,11 @@ const DonorForm = () => {
             <input
               type="checkbox"
               name="accept"
-              onChange={updateInput}
-              value={formData.accept || ''}
+              onChange={(e) => {
+                e.target.value = e.target.checked;
+                updateInput(e);
+              }}
+              checked={formData.accept === 'true'}
               required
             />
             <label className="tnc">ACCEPT</label>
